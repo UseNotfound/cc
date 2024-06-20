@@ -26,7 +26,7 @@ coun = f.country()
 mail = f.email()
 command_usage = {}
 
-AUTH_NOT = f"""{name} Not Auth In Bot,
+AUTH_NOT = f"""{names} Not Auth In Bot,
 
 
 𝑪𝑳𝑰𝑪𝑲 /cmds 𝑻𝑶 𝑽𝑰𝑬𝑾 𝑻𝑯𝑬 𝑪𝑶𝑴𝑴𝑨𝑵𝑫𝑺
@@ -59,7 +59,7 @@ def reset_command_usage():
 def start(message):
 	def my_function():
 		gate=''
-		name = message.from_user.first_name
+		names = message.sender.first_name
 		with open('data.json', 'r') as file:
 			json_data = json.load(file)
 		id=message.from_user.id
@@ -106,14 +106,14 @@ def start(message):
 	try:BL=(json_data[str(id)]['plan'])
 	except:
 		BL='𝗙𝗥𝗘𝗘'
-	name = message.from_user.first_name
+	names = message.from_user.first_name
 	keyboard = types.InlineKeyboardMarkup()
 	contact_button = types.InlineKeyboardButton(text=f"{BL} ",callback_data='plan')
 	keyboard.add(contact_button)
 	bot.send_message(chat_id=message.chat.id, text=CMDS, reply_markup=keyboard)
 @bot.message_handler(content_types=["document"])
 def main(message):
-		name = message.from_user.first_name
+		names = message.from_user.first_name
 		with open('data.json', 'r') as file:
 			json_data = json.load(file)
 		id=message.from_user.id
@@ -537,7 +537,7 @@ def menu_callback(call):
 @bot.message_handler(func=lambda message: message.text.lower().startswith('.au') or message.text.lower().startswith('/au'))
 def respond_to_vbv(message):
 	gate='stripe Auth'
-	name = message.from_user.first_name
+	names = message.from_user.first_name
 	idt=message.from_user.id
 	id=message.chat.id
 	with open('data.json', 'r') as json_file:
@@ -700,7 +700,7 @@ Card: XXXXXXXXXXXXXXXX|MM|YYYY|CVV</b>''',parse_mode="HTML")
 @bot.message_handler(func=lambda message: message.text.lower().startswith('.chk') or message.text.lower().startswith('/chk'))
 def respond_to_vbv(message):
 	gate='Braintree Auth'
-	name = message.from_user.first_name
+	names = message.from_user.first_name
 	idt=message.from_user.id
 	id=message.chat.id
 	with open('data.json', 'r') as json_file:
@@ -859,7 +859,7 @@ Card: XXXXXXXXXXXXXXXX|MM|YYYY|CVV</b>''',parse_mode="HTML")
 @bot.message_handler(func=lambda message: message.text.lower().startswith('.str') or message.text.lower().startswith('/str'))
 def respond_to_vbv(message):
 	gate='stripe charge'
-	name = message.from_user.first_name
+	names = message.from_user.first_name
 	idt=message.from_user.id
 	id=message.chat.id
 	with open('data.json', 'r') as json_file:
@@ -1170,7 +1170,7 @@ def start(message):
 @bot.message_handler(func=lambda message: message.text.lower().startswith('.vbv') or message.text.lower().startswith('/vbv'))
 def respond_to_vbv(message):
 	id=message.from_user.id
-	name = message.from_user.first_name
+	names = message.from_user.first_name
 	gate='3D Lookup'
 	with open('data.json', 'r') as file:
 		json_data = json.load(file)
