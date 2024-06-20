@@ -28,7 +28,6 @@ command_usage = {}
 
 AUTH_NOT = f"""{name} Not Auth In Bot,
 
-𝗬𝗢𝗨𝗥 𝗣𝗟𝗔𝗡 𝗡𝗢𝗪 {BL}
 
 𝑪𝑳𝑰𝑪𝑲 /cmds 𝑻𝑶 𝑽𝑰𝑬𝑾 𝑻𝑯𝑬 𝑪𝑶𝑴𝑴𝑨𝑵𝑫𝑺
 """
