@@ -25,8 +25,8 @@ phone = f.phone_number()
 coun = f.country()
 mail = f.email()
 command_usage = {}
-mention = message.from_user.mention
-AUTH_NOT = f"""{mention} Not Auth In Bot,
+
+AUTH_NOT = f"""{name} Not Auth In Bot,
 
 𝗬𝗢𝗨𝗥 𝗣𝗟𝗔𝗡 𝗡𝗢𝗪 {BL}
 
