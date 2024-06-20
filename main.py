@@ -59,7 +59,7 @@ def reset_command_usage():
 def start(message):
 	def my_function():
 		gate=''
-		names = message.sender.first_name
+		names = message.from_user.first_name
 		with open('data.json', 'r') as file:
 			json_data = json.load(file)
 		id=message.from_user.id
