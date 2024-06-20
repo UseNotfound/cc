@@ -40,7 +40,6 @@ def start(message):
 	def my_function():
 		gate=''
 		name = message.from_user.first_name
-		mention = message.from_user.mention
 		with open('data.json', 'r') as file:
 			json_data = json.load(file)
 		id=message.from_user.id
