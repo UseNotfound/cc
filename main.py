@@ -59,7 +59,7 @@ def start(message):
 			ahmed = types.InlineKeyboardButton(text="𝗢𝗪𝗡𝗘𝗥 ", url="https://t.me/YourExDestiny")
 			contact_button = types.InlineKeyboardButton(text="𝘾𝙃𝘼𝙉𝙉𝙀𝙇 ", url="https://t.me/CARD3DBOTx")
 			keyboard.add(contact_button, ahmed)
-			video_url = f'https://t.me/ahmed_hussien_01/2'
+			video_url = f'https://graph.org/file/5b7b534d95acf72aeaf74.mp4'
 			bot.send_video(chat_id=message.chat.id, video=video_url, caption=f'''<b>𝑯𝑬𝑳𝑳𝑶 {name}
 𝑻𝑯𝑰𝑺 𝑷𝑨𝑹𝑻𝑰𝑪𝑼𝑳𝑨𝑹 𝑩𝑶𝑻 𝑰𝑺 𝑵𝑶𝑻 𝑭𝑹𝑬𝑬 
 𝑰𝑭 𝒀𝑶𝑼 𝑾𝑨𝑵𝑻 𝑻𝑶 𝑼𝑺𝑬 𝑰𝑻, 𝒀𝑶𝑼 𝑴𝑼𝑺𝑻 𝑷𝑼𝑹𝑪𝑯𝑨𝑺𝑬 𝑨 𝑾𝑬𝑬𝑲𝑳𝒀 𝑶𝑹 𝑴𝑶𝑵𝑻𝑯𝑳𝒀 𝑺𝑼𝑩𝑺𝑪𝑹𝑰𝑷𝑻𝑰𝑶𝑵 
@@ -77,7 +77,7 @@ def start(message):
 		keyboard.add(contact_button, ahmed)
 		username = message.from_user.first_name
 		random_number = random.randint(33, 82)
-		video_url = f'https://t.me/ahmed_hussien_01/2'
+		video_url = f'https://graph.org/file/5b7b534d95acf72aeaf74.mp4'
 		bot.send_video(chat_id=message.chat.id, video=video_url, caption='''𝘾𝙡𝙞𝙘𝙠 /cmds 𝙏𝙤 𝙑𝙞𝙚𝙬 𝙏𝙝𝙚 𝘾𝙤𝙢𝙢𝙖𝙣𝙙𝙨 𝙊𝙧 𝙎𝙚𝙣𝙙 𝙏𝙝𝙚 𝙁𝙞𝙡𝙚 𝘼𝙣𝙙 𝙄 𝙒𝙞𝙡𝙡 𝘾𝙝𝙚𝙘𝙠 𝙄𝙩''',reply_markup=keyboard)
 	my_thread = threading.Thread(target=my_function)
 	my_thread.start()
@@ -1325,13 +1325,13 @@ def start(message):
 		if not id ==admin:
 			return
 		try:
-			h=float(message.text.split(' ')[1])
+			d=float(message.text.split(' ')[1])
 			with open('data.json', 'r') as json_file:
 				existing_data = json.load(json_file)
 			characters = string.ascii_uppercase + string.digits
 			pas ='MEDO-'+''.join(random.choices(characters, k=4))+'-'+''.join(random.choices(characters, k=4))+'-'+''.join(random.choices(characters, k=4))
 			current_time = datetime.now()
-			ig = current_time + timedelta(hours=h)
+			ig = current_time + timedelta(day=d)
 			plan='𝗩𝗜𝗣'
 			parts = str(ig).split(':')
 			ig = ':'.join(parts[:2])
