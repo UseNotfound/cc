@@ -1325,13 +1325,13 @@ def start(message):
 		if not id ==admin:
 			return
 		try:
-			d=float(message.text.split(' ')[1])
+			h=float(message.text.split(' ')[1])
 			with open('data.json', 'r') as json_file:
 				existing_data = json.load(json_file)
 			characters = string.ascii_uppercase + string.digits
 			pas ='MEDO-'+''.join(random.choices(characters, k=4))+'-'+''.join(random.choices(characters, k=4))+'-'+''.join(random.choices(characters, k=4))
 			current_time = datetime.now()
-			ig = current_time + timedelta(day=d)
+			ig = current_time + timedelta(hours=h)
 			plan='𝗩𝗜𝗣'
 			parts = str(ig).split(':')
 			ig = ':'.join(parts[:2])
