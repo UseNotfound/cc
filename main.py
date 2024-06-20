@@ -1,3 +1,4 @@
+
 import telebot,os
 import re,json
 import requests
@@ -25,33 +26,6 @@ phone = f.phone_number()
 coun = f.country()
 mail = f.email()
 command_usage = {}
-
-AUTH_NOT = f"""Your Not Auth In Bot,
-
-
-𝑪𝑳𝑰𝑪𝑲 /cmds 𝑻𝑶 𝑽𝑰𝑬𝑾 𝑻𝑯𝑬 𝑪𝑶𝑴𝑴𝑨𝑵𝑫𝑺
-"""
-
-CMDS = f'''<b> 
-𝗧𝗛𝗘𝗦𝗘 𝗔𝗥𝗘 𝗧𝗛𝗘 𝘾𝙃𝘼𝙉𝙉𝙀𝙇'𝗦 𝗖𝗢𝗠𝗠𝗔𝗡𝗗𝗦 
-━━━━━━━━━━━━
-𝗕𝗥𝗔𝗜𝗡𝗧𝗥𝗘𝗘 𝗔𝗨𝗧𝗛 > <code>/chk number|mm|yy|cvc</code>
-𝗦𝗧𝗔𝗧𝗨𝗦 𝗢𝗡𝗟𝗜𝗡𝗘 ✅
-━━━━━━━━━━━━
-3𝗗 𝗟𝗢𝗢𝗞𝗨𝗣 > <code>/vbv number|mm|yy|cvc</code>
-𝗢𝗡𝗟𝗜𝗡𝗘 ✅
-━━━━━━━━━━━━
-𝗦𝗧𝗥𝗜𝗣𝗘 𝗖𝗛𝗔𝗥𝗚𝗘 > <code>/str number|mm|yy|cvc</code>
-𝗢𝗙𝗙𝗟𝗜𝗡𝗘 ❌
-━━━━━━━━━━━━
-𝗦𝗧𝗥𝗜𝗣𝗘 𝗔𝗨𝗧𝗛 > <code>/au number|mm|yy|cvc</code>
-𝗢𝗙𝗙𝗟𝗜𝗡𝗘 ❌
-━━━━━━━━━━━━
-
-𝗪𝗘 𝗪𝗜𝗟𝗟 𝗕𝗘 𝗔𝗗𝗗𝗜𝗡𝗚 𝗦𝗢𝗠𝗘 𝗚𝗔𝗧𝗘𝗪𝗔𝗬𝗦 𝗔𝗡𝗗 𝗧𝗢𝗢𝗟𝗦 𝗦𝗢𝗢𝗡</b>
-'''
-
-
 def reset_command_usage():
 	for user_id in command_usage:
 		command_usage[user_id] = {'count': 0, 'last_time': None}
@@ -59,7 +33,7 @@ def reset_command_usage():
 def start(message):
 	def my_function():
 		gate=''
-		names = message.from_user.first_name
+		name = message.from_user.first_name
 		with open('data.json', 'r') as file:
 			json_data = json.load(file)
 		id=message.from_user.id
@@ -83,19 +57,43 @@ def start(message):
 			keyboard = types.InlineKeyboardMarkup()
 			ahmedhusien = types.InlineKeyboardMarkup(row_width=1)
 			ahmed = types.InlineKeyboardButton(text="𝗢𝗪𝗡𝗘𝗥 ", url="https://t.me/YourExDestiny")
-			contact_button = types.InlineKeyboardButton(text="𝘾𝙃𝘼𝙉𝙉𝙀𝙇 ", url="https://t.me/CARD3DBOTx")
+			contact_button = types.InlineKeyboardButton(text="𝘾𝙃𝘼𝙉𝙉𝙀𝙇 ", url="https://t.me/PHP_BL")
 			keyboard.add(contact_button, ahmed)
 			video_url = f'https://t.me/ahmed_hussien_01/2'
-			bot.send_video(chat_id=message.chat.id, video=video_url, caption=AUTH_NOT, reply_markup=keyboard)
+			bot.send_video(chat_id=message.chat.id, video=video_url, caption=f'''<b>𝑯𝑬𝑳𝑳𝑶 {name}
+𝑻𝑯𝑰𝑺 𝑷𝑨𝑹𝑻𝑰𝑪𝑼𝑳𝑨𝑹 𝑩𝑶𝑻 𝑰𝑺 𝑵𝑶𝑻 𝑭𝑹𝑬𝑬 
+𝑰𝑭 𝒀𝑶𝑼 𝑾𝑨𝑵𝑻 𝑻𝑶 𝑼𝑺𝑬 𝑰𝑻, 𝒀𝑶𝑼 𝑴𝑼𝑺𝑻 𝑷𝑼𝑹𝑪𝑯𝑨𝑺𝑬 𝑨 𝑾𝑬𝑬𝑲𝑳𝒀 𝑶𝑹 𝑴𝑶𝑵𝑻𝑯𝑳𝒀 𝑺𝑼𝑩𝑺𝑪𝑹𝑰𝑷𝑻𝑰𝑶𝑵 
+
+𝑻𝑯𝑬 𝑩𝑶𝑻'𝑺 𝑱𝑶𝑩 𝑰𝑺 𝑻𝑶 𝑪𝑯𝑬𝑪𝑲 𝑪𝑨𝑹𝑫𝑺
+
+𝑩𝑶𝑻 𝑺𝑼𝑩𝑺𝑪𝑹𝑰𝑷𝑻𝑰𝑶𝑵 𝑷𝑹𝑰𝑪𝑬𝑺:
+ 
+𝗘𝗚𝗬𝗣𝗧 🇪🇬
+1 𝗪𝗘𝗘𝗞 > 250𝗘𝗚
+1 𝗠𝗢𝗡𝗧𝗛 > 600𝗘𝗚
+━━━━━━━━━━━━
+𝗜𝗥𝗔𝗤 🇮🇶
+1 𝗪𝗘𝗘𝗞 » 6 𝗔𝗦𝗜𝗔 
+1 𝗠𝗢𝗡𝗧𝗛 » 13 𝗔𝗦𝗜𝗔
+━━━━━━━━━━━━
+𝗪𝗢𝗥𝗟𝗗𝗪𝗜𝗗𝗘 » 𝗨𝗦𝗗𝗧 🌍
+1 𝗪𝗘𝗘𝗞 » 6$ 
+1 𝗠𝗢𝗡𝗧𝗛 » 13$
+━━━━━━━━━━━━
+
+𝑪𝑳𝑰𝑪𝑲 /𝑪𝑴𝑫𝑺 𝑻𝑶 𝑽𝑰𝑬𝑾 𝑻𝑯𝑬 𝑪𝑶𝑴𝑴𝑨𝑵𝑫𝑺
+
+𝒀𝑶𝑼𝑹 𝑷𝑳𝑨𝑵 𝑵𝑶𝑾 {BL}</b>
+	''',reply_markup=keyboard)
 			return
 		keyboard = types.InlineKeyboardMarkup()
 		contact_button = types.InlineKeyboardButton(text="𝗢𝗪𝗡𝗘𝗥", url="https://t.me/YourExDestiny")
-		ahmed = types.InlineKeyboardButton(text="𝘾𝙃𝘼𝙉𝙉𝙀𝙇", url="https://t.me/CARD3DBOTx")
+		ahmed = types.InlineKeyboardButton(text="𝘾𝙃𝘼𝙉𝙉𝙀𝙇", url="https://t.me/PHP_BL")
 		keyboard.add(contact_button, ahmed)
 		username = message.from_user.first_name
 		random_number = random.randint(33, 82)
 		video_url = f'https://t.me/ahmed_hussien_01/2'
-		bot.send_video(chat_id=message.chat.id, video=video_url, caption=AUTH_NOT, reply_markup=keyboard)
+		bot.send_video(chat_id=message.chat.id, video=video_url, caption='''𝘾𝙡𝙞𝙘𝙠 /cmds 𝙏𝙤 𝙑𝙞𝙚𝙬 𝙏𝙝𝙚 𝘾𝙤𝙢𝙢𝙖𝙣𝙙𝙨 𝙊𝙧 𝙎𝙚𝙣𝙙 𝙏𝙝𝙚 𝙁𝙞𝙡𝙚 𝘼𝙣𝙙 𝙄 𝙒𝙞𝙡𝙡 𝘾𝙝𝙚𝙘𝙠 𝙄𝙩''',reply_markup=keyboard)
 	my_thread = threading.Thread(target=my_function)
 	my_thread.start()
 @bot.message_handler(commands=["cmds"])
@@ -106,14 +104,31 @@ def start(message):
 	try:BL=(json_data[str(id)]['plan'])
 	except:
 		BL='𝗙𝗥𝗘𝗘'
-	names = message.from_user.first_name
+	name = message.from_user.first_name
 	keyboard = types.InlineKeyboardMarkup()
 	contact_button = types.InlineKeyboardButton(text=f"{BL} ",callback_data='plan')
 	keyboard.add(contact_button)
-	bot.send_message(chat_id=message.chat.id, text=CMDS, reply_markup=keyboard)
+	bot.send_message(chat_id=message.chat.id, text=f'''<b> 
+𝗧𝗛𝗘𝗦𝗘 𝗔𝗥𝗘 𝗧𝗛𝗘 𝘾𝙃𝘼𝙉𝙉𝙀𝙇'𝗦 𝗖𝗢𝗠𝗠𝗔𝗡𝗗𝗦 
+━━━━━━━━━━━━
+𝗕𝗥𝗔𝗜𝗡𝗧𝗥𝗘𝗘 𝗔𝗨𝗧𝗛 > <code>/chk number|mm|yy|cvc</code>
+𝗦𝗧𝗔𝗧𝗨𝗦 𝗢𝗡𝗟𝗜𝗡𝗘 ✅
+━━━━━━━━━━━━
+3𝗗 𝗟𝗢𝗢𝗞𝗨𝗣 > <code>/vbv number|mm|yy|cvc</code>
+𝗢𝗡𝗟𝗜𝗡𝗘 ✅
+━━━━━━━━━━━━
+𝗦𝗧𝗥𝗜𝗣𝗘 𝗖𝗛𝗔𝗥𝗚𝗘 > <code>/str number|mm|yy|cvc</code>
+𝗢𝗙𝗙𝗟𝗜𝗡𝗘 ❌
+━━━━━━━━━━━━
+𝗦𝗧𝗥𝗜𝗣𝗘 𝗔𝗨𝗧𝗛 > <code>/au number|mm|yy|cvc</code>
+𝗢𝗙𝗙𝗟𝗜𝗡𝗘 ❌
+━━━━━━━━━━━━
+
+𝗪𝗘 𝗪𝗜𝗟𝗟 𝗕𝗘 𝗔𝗗𝗗𝗜𝗡𝗚 𝗦𝗢𝗠𝗘 𝗚𝗔𝗧𝗘𝗪𝗔𝗬𝗦 𝗔𝗡𝗗 𝗧𝗢𝗢𝗟𝗦 𝗦𝗢𝗢𝗡</b>
+''',reply_markup=keyboard)
 @bot.message_handler(content_types=["document"])
 def main(message):
-		names = message.from_user.first_name
+		name = message.from_user.first_name
 		with open('data.json', 'r') as file:
 			json_data = json.load(file)
 		id=message.from_user.id
@@ -136,9 +151,33 @@ def main(message):
 				json.dump(existing_data, json_file, ensure_ascii=False, indent=4)	
 			keyboard = types.InlineKeyboardMarkup()
 			contact_button = types.InlineKeyboardButton(text="𝗢𝗪𝗡𝗘𝗥 ", url="https://t.me/YourExDestiny")
-			ahmed = types.InlineKeyboardButton(text="𝘾𝙃𝘼𝙉𝙉𝙀𝙇 ", url="https://t.me/CARD3DBOTx")
+			ahmed = types.InlineKeyboardButton(text="𝘾𝙃𝘼𝙉𝙉𝙀𝙇 ", url="https://t.me/PHP_BL")
 			keyboard.add(contact_button, ahmed)
-			bot.send_message(chat_id=message.chat.id, text=AUTH_NOT, reply_markup=keyboard)
+			bot.send_message(chat_id=message.chat.id, text=f'''<b>𝑯𝑬𝑳𝑳𝑶 {name}
+𝑻𝑯𝑰𝑺 𝑷𝑨𝑹𝑻𝑰𝑪𝑼𝑳𝑨𝑹 𝑩𝑶𝑻 𝑰𝑺 𝑵𝑶𝑻 𝑭𝑹𝑬𝑬 
+𝑰𝑭 𝒀𝑶𝑼 𝑾𝑨𝑵𝑻 𝑻𝑶 𝑼𝑺𝑬 𝑰𝑻, 𝒀𝑶𝑼 𝑴𝑼𝑺𝑻 𝑷𝑼𝑹𝑪𝑯𝑨𝑺𝑬 𝑨 𝑾𝑬𝑬𝑲𝑳𝒀 𝑶𝑹 𝑴𝑶𝑵𝑻𝑯𝑳𝒀 𝑺𝑼𝑩𝑺𝑪𝑹𝑰𝑷𝑻𝑰𝑶𝑵 
+
+𝑻𝑯𝑬 𝑩𝑶𝑻'𝑺 𝑱𝑶𝑩 𝑰𝑺 𝑻𝑶 𝑪𝑯𝑬𝑪𝑲 𝑪𝑨𝑹𝑫𝑺
+
+𝑩𝑶𝑻 𝑺𝑼𝑩𝑺𝑪𝑹𝑰𝑷𝑻𝑰𝑶𝑵 𝑷𝑹𝑰𝑪𝑬𝑺:
+ 
+𝗘𝗚𝗬𝗣𝗧 🇪🇬
+1 𝗪𝗘𝗘𝗞 > 250𝗘𝗚
+1 𝗠𝗢𝗡𝗧𝗛 > 600𝗘𝗚
+━━━━━━━━━━━━
+𝗜𝗥𝗔𝗤 🇮🇶
+1 𝗪𝗘𝗘𝗞 » 6 𝗔𝗦𝗜𝗔 
+1 𝗠𝗢𝗡𝗧𝗛 » 13 𝗔𝗦𝗜𝗔
+━━━━━━━━━━━━
+𝗪𝗢𝗥𝗟𝗗𝗪𝗜𝗗𝗘 » 𝗨𝗦𝗗𝗧 🌍
+1 𝗪𝗘𝗘𝗞 » 6$ 
+1 𝗠𝗢𝗡𝗧𝗛 » 13$
+━━━━━━━━━━━━
+
+𝑪𝑳𝑰𝑪𝑲 /𝑪𝑴𝑫𝑺 𝑻𝑶 𝑽𝑰𝑬𝑾 𝑻𝑯𝑬 𝑪𝑶𝑴𝑴𝑨𝑵𝑫𝑺
+
+𝒀𝑶𝑼𝑹 𝑷𝑳𝑨𝑵 𝑵𝑶𝑾 {BL}</b>
+''',reply_markup=keyboard)
 			return
 		with open('data.json', 'r') as file:
 			json_data = json.load(file)
@@ -148,16 +187,40 @@ def main(message):
 		except Exception as e:
 			keyboard = types.InlineKeyboardMarkup()
 			ahmed = types.InlineKeyboardButton(text="𝗢𝗪𝗡𝗘𝗥 ", url="https://t.me/YourExDestiny")
-			contact_button = types.InlineKeyboardButton(text="𝘾𝙃𝘼𝙉𝙉𝙀𝙇 ", url="https://t.me/CARD3DBOTx")
+			contact_button = types.InlineKeyboardButton(text="𝘾𝙃𝘼𝙉𝙉𝙀𝙇 ", url="https://t.me/PHP_BL")
 			keyboard.add(contact_button, ahmed)
-			bot.send_message(chat_id=message.chat.id, text=AUTH_NOT, reply_markup=keyboard)
+			bot.send_message(chat_id=message.chat.id, text=f'''<b>𝑯𝑬𝑳𝑳𝑶 {name}
+𝑻𝑯𝑰𝑺 𝑷𝑨𝑹𝑻𝑰𝑪𝑼𝑳𝑨𝑹 𝑩𝑶𝑻 𝑰𝑺 𝑵𝑶𝑻 𝑭𝑹𝑬𝑬 
+𝑰𝑭 𝒀𝑶𝑼 𝑾𝑨𝑵𝑻 𝑻𝑶 𝑼𝑺𝑬 𝑰𝑻, 𝒀𝑶𝑼 𝑴𝑼𝑺𝑻 𝑷𝑼𝑹𝑪𝑯𝑨𝑺𝑬 𝑨 𝑾𝑬𝑬𝑲𝑳𝒀 𝑶𝑹 𝑴𝑶𝑵𝑻𝑯𝑳𝒀 𝑺𝑼𝑩𝑺𝑪𝑹𝑰𝑷𝑻𝑰𝑶𝑵 
+
+𝑻𝑯𝑬 𝑩𝑶𝑻'𝑺 𝑱𝑶𝑩 𝑰𝑺 𝑻𝑶 𝑪𝑯𝑬𝑪𝑲 𝑪𝑨𝑹𝑫𝑺
+
+𝑩𝑶𝑻 𝑺𝑼𝑩𝑺𝑪𝑹𝑰𝑷𝑻𝑰𝑶𝑵 𝑷𝑹𝑰𝑪𝑬𝑺:
+ 
+𝗘𝗚𝗬𝗣𝗧 🇪🇬
+1 𝗪𝗘𝗘𝗞 > 250𝗘𝗚
+1 𝗠𝗢𝗡𝗧𝗛 > 600𝗘𝗚
+━━━━━━━━━━━━
+𝗜𝗥𝗔𝗤 🇮🇶
+1 𝗪𝗘𝗘𝗞 » 6 𝗔𝗦𝗜𝗔 
+1 𝗠𝗢𝗡𝗧𝗛 » 13 𝗔𝗦𝗜𝗔
+━━━━━━━━━━━━
+𝗪𝗢𝗥𝗟𝗗𝗪𝗜𝗗𝗘 » 𝗨𝗦𝗗𝗧 🌍
+1 𝗪𝗘𝗘𝗞 » 6$ 
+1 𝗠𝗢𝗡𝗧𝗛 » 13$
+━━━━━━━━━━━━
+
+𝑪𝑳𝑰𝑪𝑲 /𝑪𝑴𝑫𝑺 𝑻𝑶 𝑽𝑰𝑬𝑾 𝑻𝑯𝑬 𝑪𝑶𝑴𝑴𝑨𝑵𝑫𝑺
+
+𝒀𝑶𝑼𝑹 𝑷𝑳𝑨𝑵 𝑵𝑶𝑾 {BL}</b>
+''',reply_markup=keyboard)
 			return
 		current_time = datetime.now()
 		required_duration = timedelta(hours=0)
 		if current_time - provided_time > required_duration:
 			keyboard = types.InlineKeyboardMarkup()
 			ahmed = types.InlineKeyboardButton(text="𝗢𝗪𝗡𝗘𝗥 ", url="https://t.me/YourExDestiny")
-			contact_button = types.InlineKeyboardButton(text="𝘾𝙃𝘼𝙉𝙉𝙀𝙇 ", url="https://t.me/CARD3DBOTx")
+			contact_button = types.InlineKeyboardButton(text="𝘾𝙃𝘼𝙉𝙉𝙀𝙇 ", url="https://t.me/PHP_BL")
 			keyboard.add(contact_button, ahmed)
 			bot.send_message(chat_id=message.chat.id, text=f'''<b>𝙔𝙤𝙪 𝘾𝙖𝙣𝙣𝙤𝙩 𝙐𝙨𝙚 𝙏𝙝𝙚 𝘽𝙤𝙩 𝘽𝙚𝙘𝙖𝙪𝙨𝙚 𝙔𝙤𝙪𝙧 𝙎𝙪𝙗𝙨𝙘𝙧𝙞𝙥𝙩𝙞𝙤𝙣 𝙃𝙖𝙨 𝙀𝙭𝙥𝙞𝙧𝙚𝙙</b>
 		''',reply_markup=keyboard)
@@ -537,7 +600,7 @@ def menu_callback(call):
 @bot.message_handler(func=lambda message: message.text.lower().startswith('.au') or message.text.lower().startswith('/au'))
 def respond_to_vbv(message):
 	gate='stripe Auth'
-	names = message.from_user.first_name
+	name = message.from_user.first_name
 	idt=message.from_user.id
 	id=message.chat.id
 	with open('data.json', 'r') as json_file:
@@ -560,9 +623,33 @@ def respond_to_vbv(message):
 	if BL == '𝗙𝗥𝗘𝗘':
 		keyboard = types.InlineKeyboardMarkup()
 		contact_button = types.InlineKeyboardButton(text="𝗢𝗪𝗡𝗘𝗥 ", url="@YourExDestiny")
-		ahmed = types.InlineKeyboardButton(text="𝘾𝙃𝘼𝙉𝙉𝙀𝙇 ", url="https://t.me/CARD3DBOTx")
+		ahmed = types.InlineKeyboardButton(text="𝘾𝙃𝘼𝙉𝙉𝙀𝙇 ", url="https://t.me/PHP_BL")
 		keyboard.add(contact_button, ahmed)
-		bot.send_message(chat_id=message.chat.id, text=AUTH_NOT, reply_markup=keyboard)
+		bot.send_message(chat_id=message.chat.id, text=f'''<b>𝗛𝗘𝗟𝗟𝗢 {name}
+𝗧𝗛𝗜𝗦 𝗣𝗔𝗥𝗧𝗜𝗖𝗨𝗟𝗔𝗥 𝘾𝙃𝘼𝙉𝙉𝙀𝙇 𝗜𝗦 𝗡𝗢𝗧 𝗙𝗥𝗘𝗘 
+𝗜𝗙 𝗬𝗢𝗨 𝗪𝗔𝗡𝗧 𝗧𝗢 𝗨𝗦𝗘 𝗜𝗧, 𝗬𝗢𝗨 𝗠𝗨𝗦𝗧 𝗣𝗨𝗥𝗖𝗛𝗔𝗦𝗘 𝗔 𝗪𝗘𝗘𝗞𝗟𝗬 𝗢𝗥 𝗠𝗢𝗡𝗧𝗛𝗟𝗬 𝗦𝗨𝗕𝗦𝗖𝗥𝗜𝗣𝗧𝗜𝗢𝗡 
+
+𝗧𝗛𝗘 𝘾𝙃𝘼𝙉𝙉𝙀𝙇'𝗦 𝗝𝗢𝗕 𝗜𝗦 𝗧𝗢 𝗖𝗛𝗘𝗖𝗞 𝗖𝗔𝗥𝗗𝗦
+
+𝘾𝙃𝘼𝙉𝙉𝙀𝙇 𝗦𝗨𝗕𝗦𝗖𝗥𝗜𝗣𝗧𝗜𝗢𝗡 𝗣𝗥𝗜𝗖𝗘𝗦:
+ 
+𝗘𝗚𝗬𝗣𝗧 🇪🇬
+1 𝗪𝗘𝗘𝗞 > 250𝗘𝗚
+1 𝗠𝗢𝗡𝗧𝗛 > 600𝗘𝗚
+━━━━━━━━━━━━
+𝗜𝗥𝗔𝗤 🇮🇶
+1 𝗪𝗘𝗘𝗞 » 6 𝗔𝗦𝗜𝗔 
+1 𝗠𝗢𝗡𝗧𝗛 » 13 𝗔𝗦𝗜𝗔
+━━━━━━━━━━━━
+𝗪𝗢𝗥𝗟𝗗𝗪𝗜𝗗𝗘 » 𝗨𝗦𝗗𝗧 🌍
+1 𝗪𝗘𝗘𝗞 » 6$ 
+1 𝗠𝗢𝗡𝗧𝗛 » 13$
+━━━━━━━━━━━━
+
+𝗖𝗟𝗜𝗖𝗞 /cmds 𝗧𝗢 𝗩𝗜𝗘𝗪 𝗧𝗛𝗘 𝗖𝗢𝗠𝗠𝗔𝗡𝗗𝗦
+
+𝗬𝗢𝗨𝗥 𝗣𝗟𝗔𝗡 𝗡𝗢𝗪 {BL}</b>
+''',reply_markup=keyboard)
 		return
 	with open('data.json', 'r') as file:
 		json_data = json.load(file)
@@ -572,16 +659,40 @@ def respond_to_vbv(message):
 	except Exception as e:
 		keyboard = types.InlineKeyboardMarkup()
 		contact_button = types.InlineKeyboardButton(text="𝗢𝗪𝗡𝗘𝗥 ", url="@YourExDestiny")
-		ahmed = types.InlineKeyboardButton(text="𝘾𝙃𝘼𝙉𝙉𝙀𝙇 ", url="https://t.me/CARD3DBOTx")
+		ahmed = types.InlineKeyboardButton(text="𝘾𝙃𝘼𝙉𝙉𝙀𝙇 ", url="https://t.me/PHP_BL")
 		keyboard.add(contact_button, ahmed)
-		bot.send_message(chat_id=message.chat.id, text=AUTH_NOT, reply_markup=keyboard)
+		bot.send_message(chat_id=message.chat.id, text=f'''<b>𝗛𝗘𝗟𝗟𝗢 {name}
+𝗧𝗛𝗜𝗦 𝗣𝗔𝗥𝗧𝗜𝗖𝗨𝗟𝗔𝗥 𝘾𝙃𝘼𝙉𝙉𝙀𝙇 𝗜𝗦 𝗡𝗢𝗧 𝗙𝗥𝗘𝗘 
+𝗜𝗙 𝗬𝗢𝗨 𝗪𝗔𝗡𝗧 𝗧𝗢 𝗨𝗦𝗘 𝗜𝗧, 𝗬𝗢𝗨 𝗠𝗨𝗦𝗧 𝗣𝗨𝗥𝗖𝗛𝗔𝗦𝗘 𝗔 𝗪𝗘𝗘𝗞𝗟𝗬 𝗢𝗥 𝗠𝗢𝗡𝗧𝗛𝗟𝗬 𝗦𝗨𝗕𝗦𝗖𝗥𝗜𝗣𝗧𝗜𝗢𝗡 
+
+𝗧𝗛𝗘 𝘾𝙃𝘼𝙉𝙉𝙀𝙇'𝗦 𝗝𝗢𝗕 𝗜𝗦 𝗧𝗢 𝗖𝗛𝗘𝗖𝗞 𝗖𝗔𝗥𝗗𝗦
+
+𝘾𝙃𝘼𝙉𝙉𝙀𝙇 𝗦𝗨𝗕𝗦𝗖𝗥𝗜𝗣𝗧𝗜𝗢𝗡 𝗣𝗥𝗜𝗖𝗘𝗦:
+ 
+𝗘𝗚𝗬𝗣𝗧 🇪🇬
+1 𝗪𝗘𝗘𝗞 > 250𝗘𝗚
+1 𝗠𝗢𝗡𝗧𝗛 > 600𝗘𝗚
+━━━━━━━━━━━━
+𝗜𝗥𝗔𝗤 🇮🇶
+1 𝗪𝗘𝗘𝗞 » 6 𝗔𝗦𝗜𝗔 
+1 𝗠𝗢𝗡𝗧𝗛 » 13 𝗔𝗦𝗜𝗔
+━━━━━━━━━━━━
+𝗪𝗢𝗥𝗟𝗗𝗪𝗜𝗗𝗘 » 𝗨𝗦𝗗𝗧 🌍
+1 𝗪𝗘𝗘𝗞 » 6$ 
+1 𝗠𝗢𝗡𝗧𝗛 » 13$
+━━━━━━━━━━━━
+
+𝗖𝗟𝗜𝗖𝗞 /cmds 𝗧𝗢 𝗩𝗜𝗘𝗪 𝗧𝗛𝗘 𝗖𝗢𝗠𝗠𝗔𝗡𝗗𝗦
+
+𝗬𝗢𝗨𝗥 𝗣𝗟𝗔𝗡 𝗡𝗢𝗪 {BL}</b>
+''',reply_markup=keyboard)
 		return
 	current_time = datetime.now()
 	required_duration = timedelta(hours=0)
 	if current_time - provided_time > required_duration:
 		keyboard = types.InlineKeyboardMarkup()
 		contact_button = types.InlineKeyboardButton(text="𝗢𝗪𝗡𝗘𝗥 ", url="@YourExDestiny")
-		ahmed = types.InlineKeyboardButton(text="𝘾𝙃𝘼𝙉𝙉𝙀𝙇 ", url="https://t.me/CARD3DBOTx")
+		ahmed = types.InlineKeyboardButton(text="𝘾𝙃𝘼𝙉𝙉𝙀𝙇 ", url="https://t.me/PHP_BL")
 		keyboard.add(contact_button, ahmed)
 		bot.send_message(chat_id=message.chat.id, text=f'''<b>𝗬𝗢𝗨 𝗖𝗔𝗡𝗡𝗢𝗧 𝗨𝗦𝗘 𝗧𝗛𝗘 𝘾𝙃𝘼𝙉𝙉𝙀𝙇 𝗕𝗘𝗖𝗔𝗨𝗦𝗘 𝗬𝗢𝗨𝗥 𝗦𝗨𝗕𝗦𝗖𝗥𝗜𝗣𝗧𝗜𝗢𝗡 𝗛𝗔𝗦 𝗘𝗫𝗣𝗜𝗥𝗘𝗗</b>
 	''',reply_markup=keyboard)
@@ -700,7 +811,7 @@ Card: XXXXXXXXXXXXXXXX|MM|YYYY|CVV</b>''',parse_mode="HTML")
 @bot.message_handler(func=lambda message: message.text.lower().startswith('.chk') or message.text.lower().startswith('/chk'))
 def respond_to_vbv(message):
 	gate='Braintree Auth'
-	names = message.from_user.first_name
+	name = message.from_user.first_name
 	idt=message.from_user.id
 	id=message.chat.id
 	with open('data.json', 'r') as json_file:
@@ -723,9 +834,33 @@ def respond_to_vbv(message):
 	if BL == '𝗙𝗥𝗘𝗘':
 		keyboard = types.InlineKeyboardMarkup()
 		contact_button = types.InlineKeyboardButton(text="𝗢𝗪𝗡𝗘𝗥 ", url="https://t.me/YourExDestiny")
-		ahmed = types.InlineKeyboardButton(text="𝘾𝙃𝘼𝙉𝙉𝙀𝙇 ", url="https://t.me/CARD3DBOTx")
+		ahmed = types.InlineKeyboardButton(text="𝘾𝙃𝘼𝙉𝙉𝙀𝙇 ", url="https://t.me/PHP_BL")
 		keyboard.add(contact_button, ahmed)
-		bot.send_message(chat_id=message.chat.id, text=AUTH_NOT, reply_markup=keyboard)
+		bot.send_message(chat_id=message.chat.id, text=f'''<b>𝗛𝗘𝗟𝗟𝗢 {name}
+𝗧𝗛𝗜𝗦 𝗣𝗔𝗥𝗧𝗜𝗖𝗨𝗟𝗔𝗥 𝘾𝙃𝘼𝙉𝙉𝙀𝙇 𝗜𝗦 𝗡𝗢𝗧 𝗙𝗥𝗘𝗘 
+𝗜𝗙 𝗬𝗢𝗨 𝗪𝗔𝗡𝗧 𝗧𝗢 𝗨𝗦𝗘 𝗜𝗧, 𝗬𝗢𝗨 𝗠𝗨𝗦𝗧 𝗣𝗨𝗥𝗖𝗛𝗔𝗦𝗘 𝗔 𝗪𝗘𝗘𝗞𝗟𝗬 𝗢𝗥 𝗠𝗢𝗡𝗧𝗛𝗟𝗬 𝗦𝗨𝗕𝗦𝗖𝗥𝗜𝗣𝗧𝗜𝗢𝗡 
+
+𝗧𝗛𝗘 𝘾𝙃𝘼𝙉𝙉𝙀𝙇'𝗦 𝗝𝗢𝗕 𝗜𝗦 𝗧𝗢 𝗖𝗛𝗘𝗖𝗞 𝗖𝗔𝗥𝗗𝗦
+
+𝘾𝙃𝘼𝙉𝙉𝙀𝙇 𝗦𝗨𝗕𝗦𝗖𝗥𝗜𝗣𝗧𝗜𝗢𝗡 𝗣𝗥𝗜𝗖𝗘𝗦:
+ 
+𝗘𝗚𝗬𝗣𝗧 🇪🇬
+1 𝗪𝗘𝗘𝗞 > 250𝗘𝗚
+1 𝗠𝗢𝗡𝗧𝗛 > 600𝗘𝗚
+━━━━━━━━━━━━
+𝗜𝗥𝗔𝗤 🇮🇶
+1 𝗪𝗘𝗘𝗞 » 6 𝗔𝗦𝗜𝗔 
+1 𝗠𝗢𝗡𝗧𝗛 » 13 𝗔𝗦𝗜𝗔
+━━━━━━━━━━━━
+𝗪𝗢𝗥𝗟𝗗𝗪𝗜𝗗𝗘 » 𝗨𝗦𝗗𝗧 🌍
+1 𝗪𝗘𝗘𝗞 » 6$ 
+1 𝗠𝗢𝗡𝗧𝗛 » 13$
+━━━━━━━━━━━━
+
+𝗖𝗟𝗜𝗖𝗞 /cmds 𝗧𝗢 𝗩𝗜𝗘𝗪 𝗧𝗛𝗘 𝗖𝗢𝗠𝗠𝗔𝗡𝗗𝗦
+
+𝗬𝗢𝗨𝗥 𝗣𝗟𝗔𝗡 𝗡𝗢𝗪 {BL}</b>
+''',reply_markup=keyboard)
 		return
 	with open('data.json', 'r') as file:
 		json_data = json.load(file)
@@ -735,16 +870,40 @@ def respond_to_vbv(message):
 	except Exception as e:
 		keyboard = types.InlineKeyboardMarkup()
 		contact_button = types.InlineKeyboardButton(text="𝗢𝗪𝗡𝗘𝗥 ", url="https://t.me/YourExDestiny")
-		ahmed = types.InlineKeyboardButton(text="𝘾𝙃𝘼𝙉𝙉𝙀𝙇 ", url="https://t.me/CARD3DBOTx")
+		ahmed = types.InlineKeyboardButton(text="𝘾𝙃𝘼𝙉𝙉𝙀𝙇 ", url="https://t.me/PHP_BL")
 		keyboard.add(contact_button, ahmed)
-		bot.send_message(chat_id=message.chat.id, text=AUTH_NOT, reply_markup=keyboard)
+		bot.send_message(chat_id=message.chat.id, text=f'''<b>𝗛𝗘𝗟𝗟𝗢 {name}
+𝗧𝗛𝗜𝗦 𝗣𝗔𝗥𝗧𝗜𝗖𝗨𝗟𝗔𝗥 𝘾𝙃𝘼𝙉𝙉𝙀𝙇 𝗜𝗦 𝗡𝗢𝗧 𝗙𝗥𝗘𝗘 
+𝗜𝗙 𝗬𝗢𝗨 𝗪𝗔𝗡𝗧 𝗧𝗢 𝗨𝗦𝗘 𝗜𝗧, 𝗬𝗢𝗨 𝗠𝗨𝗦𝗧 𝗣𝗨𝗥𝗖𝗛𝗔𝗦𝗘 𝗔 𝗪𝗘𝗘𝗞𝗟𝗬 𝗢𝗥 𝗠𝗢𝗡𝗧𝗛𝗟𝗬 𝗦𝗨𝗕𝗦𝗖𝗥𝗜𝗣𝗧𝗜𝗢𝗡 
+
+𝗧𝗛𝗘 𝘾𝙃𝘼𝙉𝙉𝙀𝙇'𝗦 𝗝𝗢𝗕 𝗜𝗦 𝗧𝗢 𝗖𝗛𝗘𝗖𝗞 𝗖𝗔𝗥𝗗𝗦
+
+𝘾𝙃𝘼𝙉𝙉𝙀𝙇 𝗦𝗨𝗕𝗦𝗖𝗥𝗜𝗣𝗧𝗜𝗢𝗡 𝗣𝗥𝗜𝗖𝗘𝗦:
+ 
+𝗘𝗚𝗬𝗣𝗧 🇪🇬
+1 𝗪𝗘𝗘𝗞 > 250𝗘𝗚
+1 𝗠𝗢𝗡𝗧𝗛 > 600𝗘𝗚
+━━━━━━━━━━━━
+𝗜𝗥𝗔𝗤 🇮🇶
+1 𝗪𝗘𝗘𝗞 » 6 𝗔𝗦𝗜𝗔 
+1 𝗠𝗢𝗡𝗧𝗛 » 13 𝗔𝗦𝗜𝗔
+━━━━━━━━━━━━
+𝗪𝗢𝗥𝗟𝗗𝗪𝗜𝗗𝗘 » 𝗨𝗦𝗗𝗧 🌍
+1 𝗪𝗘𝗘𝗞 » 6$ 
+1 𝗠𝗢𝗡𝗧𝗛 » 13$
+━━━━━━━━━━━━
+
+𝗖𝗟𝗜𝗖𝗞 /cmds 𝗧𝗢 𝗩𝗜𝗘𝗪 𝗧𝗛𝗘 𝗖𝗢𝗠𝗠𝗔𝗡𝗗𝗦
+
+𝗬𝗢𝗨𝗥 𝗣𝗟𝗔𝗡 𝗡𝗢𝗪 {BL}</b>
+''',reply_markup=keyboard)
 		return
 	current_time = datetime.now()
 	required_duration = timedelta(hours=0)
 	if current_time - provided_time > required_duration:
 		keyboard = types.InlineKeyboardMarkup()
 		contact_button = types.InlineKeyboardButton(text="𝗢𝗪𝗡𝗘𝗥 ", url="https://t.me/YourExDestiny")
-		ahmed = types.InlineKeyboardButton(text="𝘾𝙃𝘼𝙉𝙉𝙀𝙇 ", url="https://t.me/CARD3DBOTx")
+		ahmed = types.InlineKeyboardButton(text="𝘾𝙃𝘼𝙉𝙉𝙀𝙇 ", url="https://t.me/PHP_BL")
 		keyboard.add(contact_button, ahmed)
 		bot.send_message(chat_id=message.chat.id, text=f'''<b>𝗬𝗢𝗨 𝗖𝗔𝗡𝗡𝗢𝗧 𝗨𝗦𝗘 𝗧𝗛𝗘 𝘾𝙃𝘼𝙉𝙉𝙀𝙇 𝗕𝗘𝗖𝗔𝗨𝗦𝗘 𝗬𝗢𝗨𝗥 𝗦𝗨𝗕𝗦𝗖𝗥𝗜𝗣𝗧𝗜𝗢𝗡 𝗛𝗔𝗦 𝗘𝗫𝗣𝗜𝗥𝗘𝗗</b>
 	''',reply_markup=keyboard)
@@ -859,7 +1018,7 @@ Card: XXXXXXXXXXXXXXXX|MM|YYYY|CVV</b>''',parse_mode="HTML")
 @bot.message_handler(func=lambda message: message.text.lower().startswith('.str') or message.text.lower().startswith('/str'))
 def respond_to_vbv(message):
 	gate='stripe charge'
-	names = message.from_user.first_name
+	name = message.from_user.first_name
 	idt=message.from_user.id
 	id=message.chat.id
 	with open('data.json', 'r') as json_file:
@@ -882,9 +1041,33 @@ def respond_to_vbv(message):
 	if BL == '𝗙𝗥𝗘𝗘':
 		keyboard = types.InlineKeyboardMarkup()
 		contact_button = types.InlineKeyboardButton(text="𝗢𝗪𝗡𝗘𝗥 ", url="https://t.me/YourExDestiny")
-		ahmed = types.InlineKeyboardButton(text="𝘾𝙃𝘼𝙉𝙉𝙀𝙇 ", url="https://t.me/CARD3DBOTx")
+		ahmed = types.InlineKeyboardButton(text="𝘾𝙃𝘼𝙉𝙉𝙀𝙇 ", url="https://t.me/PHP_BL")
 		keyboard.add(contact_button, ahmed)
-		bot.send_message(chat_id=message.chat.id, text=AUTH_NOT, reply_markup=keyboard)
+		bot.send_message(chat_id=message.chat.id, text=f'''<b>𝗛𝗘𝗟𝗟𝗢 {name}
+𝗧𝗛𝗜𝗦 𝗣𝗔𝗥𝗧𝗜𝗖𝗨𝗟𝗔𝗥 𝘾𝙃𝘼𝙉𝙉𝙀𝙇 𝗜𝗦 𝗡𝗢𝗧 𝗙𝗥𝗘𝗘 
+𝗜𝗙 𝗬𝗢𝗨 𝗪𝗔𝗡𝗧 𝗧𝗢 𝗨𝗦𝗘 𝗜𝗧, 𝗬𝗢𝗨 𝗠𝗨𝗦𝗧 𝗣𝗨𝗥𝗖𝗛𝗔𝗦𝗘 𝗔 𝗪𝗘𝗘𝗞𝗟𝗬 𝗢𝗥 𝗠𝗢𝗡𝗧𝗛𝗟𝗬 𝗦𝗨𝗕𝗦𝗖𝗥𝗜𝗣𝗧𝗜𝗢𝗡 
+
+𝗧𝗛𝗘 𝘾𝙃𝘼𝙉𝙉𝙀𝙇'𝗦 𝗝𝗢𝗕 𝗜𝗦 𝗧𝗢 𝗖𝗛𝗘𝗖𝗞 𝗖𝗔𝗥𝗗𝗦
+
+𝘾𝙃𝘼𝙉𝙉𝙀𝙇 𝗦𝗨𝗕𝗦𝗖𝗥𝗜𝗣𝗧𝗜𝗢𝗡 𝗣𝗥𝗜𝗖𝗘𝗦:
+ 
+𝗘𝗚𝗬𝗣𝗧 🇪🇬
+1 𝗪𝗘𝗘𝗞 > 250𝗘𝗚
+1 𝗠𝗢𝗡𝗧𝗛 > 600𝗘𝗚
+━━━━━━━━━━━━
+𝗜𝗥𝗔𝗤 🇮🇶
+1 𝗪𝗘𝗘𝗞 » 6 𝗔𝗦𝗜𝗔 
+1 𝗠𝗢𝗡𝗧𝗛 » 13 𝗔𝗦𝗜𝗔
+━━━━━━━━━━━━
+𝗪𝗢𝗥𝗟𝗗𝗪𝗜𝗗𝗘 » 𝗨𝗦𝗗𝗧 🌍
+1 𝗪𝗘𝗘𝗞 » 6$ 
+1 𝗠𝗢𝗡𝗧𝗛 » 13$
+━━━━━━━━━━━━
+
+𝗖𝗟𝗜𝗖𝗞 /cmds 𝗧𝗢 𝗩𝗜𝗘𝗪 𝗧𝗛𝗘 𝗖𝗢𝗠𝗠𝗔𝗡𝗗𝗦
+
+𝗬𝗢𝗨𝗥 𝗣𝗟𝗔𝗡 𝗡𝗢𝗪 {BL}</b>
+''',reply_markup=keyboard)
 		return
 	with open('data.json', 'r') as file:
 		json_data = json.load(file)
@@ -894,16 +1077,40 @@ def respond_to_vbv(message):
 	except Exception as e:
 		keyboard = types.InlineKeyboardMarkup()
 		contact_button = types.InlineKeyboardButton(text="𝗢𝗪𝗡𝗘𝗥 ", url="https://t.me/YourExDestiny")
-		ahmed = types.InlineKeyboardButton(text="𝘾𝙃𝘼𝙉𝙉𝙀𝙇 ", url="https://t.me/CARD3DBOTx")
+		ahmed = types.InlineKeyboardButton(text="𝘾𝙃𝘼𝙉𝙉𝙀𝙇 ", url="https://t.me/PHP_BL")
 		keyboard.add(contact_button, ahmed)
-		bot.send_message(chat_id=message.chat.id, text=AUTH_NOT, reply_markup=keyboard)
+		bot.send_message(chat_id=message.chat.id, text=f'''<b>𝗛𝗘𝗟𝗟𝗢 {name}
+𝗧𝗛𝗜𝗦 𝗣𝗔𝗥𝗧𝗜𝗖𝗨𝗟𝗔𝗥 𝘾𝙃𝘼𝙉𝙉𝙀𝙇 𝗜𝗦 𝗡𝗢𝗧 𝗙𝗥𝗘𝗘 
+𝗜𝗙 𝗬𝗢𝗨 𝗪𝗔𝗡𝗧 𝗧𝗢 𝗨𝗦𝗘 𝗜𝗧, 𝗬𝗢𝗨 𝗠𝗨𝗦𝗧 𝗣𝗨𝗥𝗖𝗛𝗔𝗦𝗘 𝗔 𝗪𝗘𝗘𝗞𝗟𝗬 𝗢𝗥 𝗠𝗢𝗡𝗧𝗛𝗟𝗬 𝗦𝗨𝗕𝗦𝗖𝗥𝗜𝗣𝗧𝗜𝗢𝗡 
+
+𝗧𝗛𝗘 𝘾𝙃𝘼𝙉𝙉𝙀𝙇'𝗦 𝗝𝗢𝗕 𝗜𝗦 𝗧𝗢 𝗖𝗛𝗘𝗖𝗞 𝗖𝗔𝗥𝗗𝗦
+
+𝘾𝙃𝘼𝙉𝙉𝙀𝙇 𝗦𝗨𝗕𝗦𝗖𝗥𝗜𝗣𝗧𝗜𝗢𝗡 𝗣𝗥𝗜𝗖𝗘𝗦:
+ 
+𝗘𝗚𝗬𝗣𝗧 🇪🇬
+1 𝗪𝗘𝗘𝗞 > 250𝗘𝗚
+1 𝗠𝗢𝗡𝗧𝗛 > 600𝗘𝗚
+━━━━━━━━━━━━
+𝗜𝗥𝗔𝗤 🇮🇶
+1 𝗪𝗘𝗘𝗞 » 6 𝗔𝗦𝗜𝗔 
+1 𝗠𝗢𝗡𝗧𝗛 » 13 𝗔𝗦𝗜𝗔
+━━━━━━━━━━━━
+𝗪𝗢𝗥𝗟𝗗𝗪𝗜𝗗𝗘 » 𝗨𝗦𝗗𝗧 🌍
+1 𝗪𝗘𝗘𝗞 » 6$ 
+1 𝗠𝗢𝗡𝗧𝗛 » 13$
+━━━━━━━━━━━━
+
+𝗖𝗟𝗜𝗖𝗞 /cmds 𝗧𝗢 𝗩𝗜𝗘𝗪 𝗧𝗛𝗘 𝗖𝗢𝗠𝗠𝗔𝗡𝗗𝗦
+
+𝗬𝗢𝗨𝗥 𝗣𝗟𝗔𝗡 𝗡𝗢𝗪 {BL}</b>
+''',reply_markup=keyboard)
 		return
 	current_time = datetime.now()
 	required_duration = timedelta(hours=0)
 	if current_time - provided_time > required_duration:
 		keyboard = types.InlineKeyboardMarkup()
 		contact_button = types.InlineKeyboardButton(text="𝗢𝗪𝗡𝗘𝗥 ", url="https://t.me/YourExDestiny")
-		ahmed = types.InlineKeyboardButton(text="𝘾𝙃𝘼𝙉𝙉𝙀𝙇 ", url="https://t.me/CARD3DBOTx")
+		ahmed = types.InlineKeyboardButton(text="𝘾𝙃𝘼𝙉𝙉𝙀𝙇 ", url="https://t.me/PHP_BL")
 		keyboard.add(contact_button, ahmed)
 		bot.send_message(chat_id=message.chat.id, text=f'''<b>𝗬𝗢𝗨 𝗖𝗔𝗡𝗡𝗢𝗧 𝗨𝗦𝗘 𝗧𝗛𝗘 𝘾𝙃𝘼𝙉𝙉𝙀𝙇 𝗕𝗘𝗖𝗔𝗨𝗦𝗘 𝗬𝗢𝗨𝗥 𝗦𝗨𝗕𝗦𝗖𝗥𝗜𝗣𝗧𝗜𝗢𝗡 𝗛𝗔𝗦 𝗘𝗫𝗣𝗜𝗥𝗘𝗗</b>
 	''',reply_markup=keyboard)
@@ -1170,7 +1377,7 @@ def start(message):
 @bot.message_handler(func=lambda message: message.text.lower().startswith('.vbv') or message.text.lower().startswith('/vbv'))
 def respond_to_vbv(message):
 	id=message.from_user.id
-	names = message.from_user.first_name
+	name = message.from_user.first_name
 	gate='3D Lookup'
 	with open('data.json', 'r') as file:
 		json_data = json.load(file)
@@ -1191,9 +1398,33 @@ def respond_to_vbv(message):
 	if BL == '𝗙𝗥𝗘𝗘':
 		keyboard = types.InlineKeyboardMarkup()
 		contact_button = types.InlineKeyboardButton(text="𝗢𝗪𝗡𝗘𝗥 ", url="https://t.me/YourExDestiny")
-		ahmed = types.InlineKeyboardButton(text="𝘾𝙃𝘼𝙉𝙉𝙀𝙇 ", url="https://t.me/CARD3DBOTx")
+		ahmed = types.InlineKeyboardButton(text="𝘾𝙃𝘼𝙉𝙉𝙀𝙇 ", url="https://t.me/PHP_BL")
 		keyboard.add(contact_button, ahmed)
-		bot.send_message(chat_id=message.chat.id, text=AUTH_NOT, reply_markup=keyboard)
+		bot.send_message(chat_id=message.chat.id, text=f'''<b>𝗛𝗘𝗟𝗟𝗢 {name}
+𝗧𝗛𝗜𝗦 𝗣𝗔𝗥𝗧𝗜𝗖𝗨𝗟𝗔𝗥 𝘾𝙃𝘼𝙉𝙉𝙀𝙇 𝗜𝗦 𝗡𝗢𝗧 𝗙𝗥𝗘𝗘 
+𝗜𝗙 𝗬𝗢𝗨 𝗪𝗔𝗡𝗧 𝗧𝗢 𝗨𝗦𝗘 𝗜𝗧, 𝗬𝗢𝗨 𝗠𝗨𝗦𝗧 𝗣𝗨𝗥𝗖𝗛𝗔𝗦𝗘 𝗔 𝗪𝗘𝗘𝗞𝗟𝗬 𝗢𝗥 𝗠𝗢𝗡𝗧𝗛𝗟𝗬 𝗦𝗨𝗕𝗦𝗖𝗥𝗜𝗣𝗧𝗜𝗢𝗡 
+
+𝗧𝗛𝗘 𝘾𝙃𝘼𝙉𝙉𝙀𝙇'𝗦 𝗝𝗢𝗕 𝗜𝗦 𝗧𝗢 𝗖𝗛𝗘𝗖𝗞 𝗖𝗔𝗥𝗗𝗦
+
+𝘾𝙃𝘼𝙉𝙉𝙀𝙇 𝗦𝗨𝗕𝗦𝗖𝗥𝗜𝗣𝗧𝗜𝗢𝗡 𝗣𝗥𝗜𝗖𝗘𝗦:
+ 
+𝗘𝗚𝗬𝗣𝗧 🇪🇬
+1 𝗪𝗘𝗘𝗞 > 250𝗘𝗚
+1 𝗠𝗢𝗡𝗧𝗛 > 600𝗘𝗚
+━━━━━━━━━━━━
+𝗜𝗥𝗔𝗤 🇮🇶
+1 𝗪𝗘𝗘𝗞 » 6 𝗔𝗦𝗜𝗔 
+1 𝗠𝗢𝗡𝗧𝗛 » 13 𝗔𝗦𝗜𝗔
+━━━━━━━━━━━━
+𝗪𝗢𝗥𝗟𝗗𝗪𝗜𝗗𝗘 » 𝗨𝗦𝗗𝗧 🌍
+1 𝗪𝗘𝗘𝗞 » 6$ 
+1 𝗠𝗢𝗡𝗧𝗛 » 13$
+━━━━━━━━━━━━
+
+𝗖𝗟𝗜𝗖𝗞 /cmds 𝗧𝗢 𝗩𝗜𝗘𝗪 𝗧𝗛𝗘 𝗖𝗢𝗠𝗠𝗔𝗡𝗗𝗦
+
+𝗬𝗢𝗨𝗥 𝗣𝗟𝗔𝗡 𝗡𝗢𝗪 {BL}</b>
+''',reply_markup=keyboard)
 		return
 	with open('data.json', 'r') as file:
 		json_data = json.load(file)
@@ -1203,16 +1434,40 @@ def respond_to_vbv(message):
 	except Exception as e:
 		keyboard = types.InlineKeyboardMarkup()
 		contact_button = types.InlineKeyboardButton(text="𝗢𝗪𝗡𝗘𝗥 ", url="https://t.me/YourExDestiny")
-		ahmed = types.InlineKeyboardButton(text="𝘾𝙃𝘼𝙉𝙉𝙀𝙇 ", url="https://t.me/CARD3DBOTx")
+		ahmed = types.InlineKeyboardButton(text="𝘾𝙃𝘼𝙉𝙉𝙀𝙇 ", url="https://t.me/PHP_BL")
 		keyboard.add(contact_button, ahmed)
-		bot.send_message(chat_id=message.chat.id, text=AUTH_NOT, reply_markup=keyboard)
+		bot.send_message(chat_id=message.chat.id, text=f'''<b>𝗛𝗘𝗟𝗟𝗢 {name}
+𝗧𝗛𝗜𝗦 𝗣𝗔𝗥𝗧𝗜𝗖𝗨𝗟𝗔𝗥 𝘾𝙃𝘼𝙉𝙉𝙀𝙇 𝗜𝗦 𝗡𝗢𝗧 𝗙𝗥𝗘𝗘 
+𝗜𝗙 𝗬𝗢𝗨 𝗪𝗔𝗡𝗧 𝗧𝗢 𝗨𝗦𝗘 𝗜𝗧, 𝗬𝗢𝗨 𝗠𝗨𝗦𝗧 𝗣𝗨𝗥𝗖𝗛𝗔𝗦𝗘 𝗔 𝗪𝗘𝗘𝗞𝗟𝗬 𝗢𝗥 𝗠𝗢𝗡𝗧𝗛𝗟𝗬 𝗦𝗨𝗕𝗦𝗖𝗥𝗜𝗣𝗧𝗜𝗢𝗡 
+
+𝗧𝗛𝗘 𝘾𝙃𝘼𝙉𝙉𝙀𝙇'𝗦 𝗝𝗢𝗕 𝗜𝗦 𝗧𝗢 𝗖𝗛𝗘𝗖𝗞 𝗖𝗔𝗥𝗗𝗦
+
+𝘾𝙃𝘼𝙉𝙉𝙀𝙇 𝗦𝗨𝗕𝗦𝗖𝗥𝗜𝗣𝗧𝗜𝗢𝗡 𝗣𝗥𝗜𝗖𝗘𝗦:
+ 
+𝗘𝗚𝗬𝗣𝗧 🇪🇬
+1 𝗪𝗘𝗘𝗞 > 250𝗘𝗚
+1 𝗠𝗢𝗡𝗧𝗛 > 600𝗘𝗚
+━━━━━━━━━━━━
+𝗜𝗥𝗔𝗤 🇮🇶
+1 𝗪𝗘𝗘𝗞 » 6 𝗔𝗦𝗜𝗔 
+1 𝗠𝗢𝗡𝗧𝗛 » 13 𝗔𝗦𝗜𝗔
+━━━━━━━━━━━━
+𝗪𝗢𝗥𝗟𝗗𝗪𝗜𝗗𝗘 » 𝗨𝗦𝗗𝗧 🌍
+1 𝗪𝗘𝗘𝗞 » 6$ 
+1 𝗠𝗢𝗡𝗧𝗛 » 13$
+━━━━━━━━━━━━
+
+𝗖𝗟𝗜𝗖𝗞 /cmds 𝗧𝗢 𝗩𝗜𝗘𝗪 𝗧𝗛𝗘 𝗖𝗢𝗠𝗠𝗔𝗡𝗗𝗦
+
+𝗬𝗢𝗨𝗥 𝗣𝗟𝗔𝗡 𝗡𝗢𝗪 {BL}</b>
+''',reply_markup=keyboard)
 		return
 	current_time = datetime.now()
 	required_duration = timedelta(hours=0)
 	if current_time - provided_time > required_duration:
 		keyboard = types.InlineKeyboardMarkup()
 		contact_button = types.InlineKeyboardButton(text="𝗢𝗪𝗡𝗘𝗥 ", url="https://t.me/YourExDestiny")
-		ahmed = types.InlineKeyboardButton(text="𝘾𝙃𝘼𝙉𝙉𝙀𝙇 ", url="https://t.me/CARD3DBOTx")
+		ahmed = types.InlineKeyboardButton(text="𝘾𝙃𝘼𝙉𝙉𝙀𝙇 ", url="https://t.me/PHP_BL")
 		keyboard.add(contact_button, ahmed)
 		bot.send_message(chat_id=message.chat.id, text=f'''<b>𝗬𝗢𝗨 𝗖𝗔𝗡𝗡𝗢𝗧 𝗨𝗦𝗘 𝗧𝗛𝗘 𝘾𝙃𝘼𝙉𝙉𝙀𝙇 𝗕𝗘𝗖𝗔𝗨𝗦𝗘 𝗬𝗢𝗨𝗥 𝗦𝗨𝗕𝗦𝗖𝗥𝗜𝗣𝗧𝗜𝗢𝗡 𝗛𝗔𝗦 𝗘𝗫𝗣𝗜𝗥𝗘𝗗</b>
 	''',reply_markup=keyboard)
