@@ -64,14 +64,14 @@ def start(message):
 			keyboard = types.InlineKeyboardMarkup()
 			ahmedhusien = types.InlineKeyboardMarkup(row_width=1)
 			ahmed = types.InlineKeyboardButton(text="𝗢𝗪𝗡𝗘𝗥 ", url="https://t.me/YourExDestiny")
-			contact_button = types.InlineKeyboardButton(text="𝘾𝙃𝘼𝙉𝙉𝙀𝙇 ", url="https://t.me/PHP_BL")
+			contact_button = types.InlineKeyboardButton(text="𝘾𝙃𝘼𝙉𝙉𝙀𝙇 ", url="https://t.me/CARD3DBOTx")
 			keyboard.add(contact_button, ahmed)
 			video_url = f'https://t.me/ahmed_hussien_01/2'
 			bot.send_video(chat_id=message.chat.id, video=video_url, caption=AUTH_NOT, reply_markup=keyboard)
 			return
 		keyboard = types.InlineKeyboardMarkup()
 		contact_button = types.InlineKeyboardButton(text="𝗢𝗪𝗡𝗘𝗥", url="https://t.me/YourExDestiny")
-		ahmed = types.InlineKeyboardButton(text="𝘾𝙃𝘼𝙉𝙉𝙀𝙇", url="https://t.me/PHP_BL")
+		ahmed = types.InlineKeyboardButton(text="𝘾𝙃𝘼𝙉𝙉𝙀𝙇", url="https://t.me/CARD3DBOTx")
 		keyboard.add(contact_button, ahmed)
 		username = message.from_user.first_name
 		random_number = random.randint(33, 82)
@@ -117,7 +117,7 @@ def main(message):
 				json.dump(existing_data, json_file, ensure_ascii=False, indent=4)	
 			keyboard = types.InlineKeyboardMarkup()
 			contact_button = types.InlineKeyboardButton(text="𝗢𝗪𝗡𝗘𝗥 ", url="https://t.me/YourExDestiny")
-			ahmed = types.InlineKeyboardButton(text="𝘾𝙃𝘼𝙉𝙉𝙀𝙇 ", url="https://t.me/PHP_BL")
+			ahmed = types.InlineKeyboardButton(text="𝘾𝙃𝘼𝙉𝙉𝙀𝙇 ", url="https://t.me/CARD3DBOTx")
 			keyboard.add(contact_button, ahmed)
 			bot.send_message(chat_id=message.chat.id, text=AUTH_NOT, reply_markup=keyboard)
 			return
@@ -129,7 +129,7 @@ def main(message):
 		except Exception as e:
 			keyboard = types.InlineKeyboardMarkup()
 			ahmed = types.InlineKeyboardButton(text="𝗢𝗪𝗡𝗘𝗥 ", url="https://t.me/YourExDestiny")
-			contact_button = types.InlineKeyboardButton(text="𝘾𝙃𝘼𝙉𝙉𝙀𝙇 ", url="https://t.me/PHP_BL")
+			contact_button = types.InlineKeyboardButton(text="𝘾𝙃𝘼𝙉𝙉𝙀𝙇 ", url="https://t.me/CARD3DBOTx")
 			keyboard.add(contact_button, ahmed)
 			bot.send_message(chat_id=message.chat.id, text=AUTH_NOT, reply_markup=keyboard)
 			return
@@ -138,7 +138,7 @@ def main(message):
 		if current_time - provided_time > required_duration:
 			keyboard = types.InlineKeyboardMarkup()
 			ahmed = types.InlineKeyboardButton(text="𝗢𝗪𝗡𝗘𝗥 ", url="https://t.me/YourExDestiny")
-			contact_button = types.InlineKeyboardButton(text="𝘾𝙃𝘼𝙉𝙉𝙀𝙇 ", url="https://t.me/PHP_BL")
+			contact_button = types.InlineKeyboardButton(text="𝘾𝙃𝘼𝙉𝙉𝙀𝙇 ", url="https://t.me/CARD3DBOTx")
 			keyboard.add(contact_button, ahmed)
 			bot.send_message(chat_id=message.chat.id, text=f'''<b>𝙔𝙤𝙪 𝘾𝙖𝙣𝙣𝙤𝙩 𝙐𝙨𝙚 𝙏𝙝𝙚 𝘽𝙤𝙩 𝘽𝙚𝙘𝙖𝙪𝙨𝙚 𝙔𝙤𝙪𝙧 𝙎𝙪𝙗𝙨𝙘𝙧𝙞𝙥𝙩𝙞𝙤𝙣 𝙃𝙖𝙨 𝙀𝙭𝙥𝙞𝙧𝙚𝙙</b>
 		''',reply_markup=keyboard)
@@ -541,7 +541,7 @@ def respond_to_vbv(message):
 	if BL == '𝗙𝗥𝗘𝗘':
 		keyboard = types.InlineKeyboardMarkup()
 		contact_button = types.InlineKeyboardButton(text="𝗢𝗪𝗡𝗘𝗥 ", url="@YourExDestiny")
-		ahmed = types.InlineKeyboardButton(text="𝘾𝙃𝘼𝙉𝙉𝙀𝙇 ", url="https://t.me/PHP_BL")
+		ahmed = types.InlineKeyboardButton(text="𝘾𝙃𝘼𝙉𝙉𝙀𝙇 ", url="https://t.me/CARD3DBOTx")
 		keyboard.add(contact_button, ahmed)
 		bot.send_message(chat_id=message.chat.id, text=AUTH_NOT, reply_markup=keyboard)
 		return
@@ -553,7 +553,7 @@ def respond_to_vbv(message):
 	except Exception as e:
 		keyboard = types.InlineKeyboardMarkup()
 		contact_button = types.InlineKeyboardButton(text="𝗢𝗪𝗡𝗘𝗥 ", url="@YourExDestiny")
-		ahmed = types.InlineKeyboardButton(text="𝘾𝙃𝘼𝙉𝙉𝙀𝙇 ", url="https://t.me/PHP_BL")
+		ahmed = types.InlineKeyboardButton(text="𝘾𝙃𝘼𝙉𝙉𝙀𝙇 ", url="https://t.me/CARD3DBOTx")
 		keyboard.add(contact_button, ahmed)
 		bot.send_message(chat_id=message.chat.id, text=AUTH_NOT, reply_markup=keyboard)
 		return
@@ -562,7 +562,7 @@ def respond_to_vbv(message):
 	if current_time - provided_time > required_duration:
 		keyboard = types.InlineKeyboardMarkup()
 		contact_button = types.InlineKeyboardButton(text="𝗢𝗪𝗡𝗘𝗥 ", url="@YourExDestiny")
-		ahmed = types.InlineKeyboardButton(text="𝘾𝙃𝘼𝙉𝙉𝙀𝙇 ", url="https://t.me/PHP_BL")
+		ahmed = types.InlineKeyboardButton(text="𝘾𝙃𝘼𝙉𝙉𝙀𝙇 ", url="https://t.me/CARD3DBOTx")
 		keyboard.add(contact_button, ahmed)
 		bot.send_message(chat_id=message.chat.id, text=f'''<b>𝗬𝗢𝗨 𝗖𝗔𝗡𝗡𝗢𝗧 𝗨𝗦𝗘 𝗧𝗛𝗘 𝘾𝙃𝘼𝙉𝙉𝙀𝙇 𝗕𝗘𝗖𝗔𝗨𝗦𝗘 𝗬𝗢𝗨𝗥 𝗦𝗨𝗕𝗦𝗖𝗥𝗜𝗣𝗧𝗜𝗢𝗡 𝗛𝗔𝗦 𝗘𝗫𝗣𝗜𝗥𝗘𝗗</b>
 	''',reply_markup=keyboard)
@@ -704,7 +704,7 @@ def respond_to_vbv(message):
 	if BL == '𝗙𝗥𝗘𝗘':
 		keyboard = types.InlineKeyboardMarkup()
 		contact_button = types.InlineKeyboardButton(text="𝗢𝗪𝗡𝗘𝗥 ", url="https://t.me/YourExDestiny")
-		ahmed = types.InlineKeyboardButton(text="𝘾𝙃𝘼𝙉𝙉𝙀𝙇 ", url="https://t.me/PHP_BL")
+		ahmed = types.InlineKeyboardButton(text="𝘾𝙃𝘼𝙉𝙉𝙀𝙇 ", url="https://t.me/CARD3DBOTx")
 		keyboard.add(contact_button, ahmed)
 		bot.send_message(chat_id=message.chat.id, text=AUTH_NOT, reply_markup=keyboard)
 		return
@@ -716,7 +716,7 @@ def respond_to_vbv(message):
 	except Exception as e:
 		keyboard = types.InlineKeyboardMarkup()
 		contact_button = types.InlineKeyboardButton(text="𝗢𝗪𝗡𝗘𝗥 ", url="https://t.me/YourExDestiny")
-		ahmed = types.InlineKeyboardButton(text="𝘾𝙃𝘼𝙉𝙉𝙀𝙇 ", url="https://t.me/PHP_BL")
+		ahmed = types.InlineKeyboardButton(text="𝘾𝙃𝘼𝙉𝙉𝙀𝙇 ", url="https://t.me/CARD3DBOTx")
 		keyboard.add(contact_button, ahmed)
 		bot.send_message(chat_id=message.chat.id, text=AUTH_NOT, reply_markup=keyboard)
 		return
@@ -725,7 +725,7 @@ def respond_to_vbv(message):
 	if current_time - provided_time > required_duration:
 		keyboard = types.InlineKeyboardMarkup()
 		contact_button = types.InlineKeyboardButton(text="𝗢𝗪𝗡𝗘𝗥 ", url="https://t.me/YourExDestiny")
-		ahmed = types.InlineKeyboardButton(text="𝘾𝙃𝘼𝙉𝙉𝙀𝙇 ", url="https://t.me/PHP_BL")
+		ahmed = types.InlineKeyboardButton(text="𝘾𝙃𝘼𝙉𝙉𝙀𝙇 ", url="https://t.me/CARD3DBOTx")
 		keyboard.add(contact_button, ahmed)
 		bot.send_message(chat_id=message.chat.id, text=f'''<b>𝗬𝗢𝗨 𝗖𝗔𝗡𝗡𝗢𝗧 𝗨𝗦𝗘 𝗧𝗛𝗘 𝘾𝙃𝘼𝙉𝙉𝙀𝙇 𝗕𝗘𝗖𝗔𝗨𝗦𝗘 𝗬𝗢𝗨𝗥 𝗦𝗨𝗕𝗦𝗖𝗥𝗜𝗣𝗧𝗜𝗢𝗡 𝗛𝗔𝗦 𝗘𝗫𝗣𝗜𝗥𝗘𝗗</b>
 	''',reply_markup=keyboard)
@@ -863,7 +863,7 @@ def respond_to_vbv(message):
 	if BL == '𝗙𝗥𝗘𝗘':
 		keyboard = types.InlineKeyboardMarkup()
 		contact_button = types.InlineKeyboardButton(text="𝗢𝗪𝗡𝗘𝗥 ", url="https://t.me/YourExDestiny")
-		ahmed = types.InlineKeyboardButton(text="𝘾𝙃𝘼𝙉𝙉𝙀𝙇 ", url="https://t.me/PHP_BL")
+		ahmed = types.InlineKeyboardButton(text="𝘾𝙃𝘼𝙉𝙉𝙀𝙇 ", url="https://t.me/CARD3DBOTx")
 		keyboard.add(contact_button, ahmed)
 		bot.send_message(chat_id=message.chat.id, text=AUTH_NOT, reply_markup=keyboard)
 		return
@@ -875,7 +875,7 @@ def respond_to_vbv(message):
 	except Exception as e:
 		keyboard = types.InlineKeyboardMarkup()
 		contact_button = types.InlineKeyboardButton(text="𝗢𝗪𝗡𝗘𝗥 ", url="https://t.me/YourExDestiny")
-		ahmed = types.InlineKeyboardButton(text="𝘾𝙃𝘼𝙉𝙉𝙀𝙇 ", url="https://t.me/PHP_BL")
+		ahmed = types.InlineKeyboardButton(text="𝘾𝙃𝘼𝙉𝙉𝙀𝙇 ", url="https://t.me/CARD3DBOTx")
 		keyboard.add(contact_button, ahmed)
 		bot.send_message(chat_id=message.chat.id, text=AUTH_NOT, reply_markup=keyboard)
 		return
@@ -884,7 +884,7 @@ def respond_to_vbv(message):
 	if current_time - provided_time > required_duration:
 		keyboard = types.InlineKeyboardMarkup()
 		contact_button = types.InlineKeyboardButton(text="𝗢𝗪𝗡𝗘𝗥 ", url="https://t.me/YourExDestiny")
-		ahmed = types.InlineKeyboardButton(text="𝘾𝙃𝘼𝙉𝙉𝙀𝙇 ", url="https://t.me/PHP_BL")
+		ahmed = types.InlineKeyboardButton(text="𝘾𝙃𝘼𝙉𝙉𝙀𝙇 ", url="https://t.me/CARD3DBOTx")
 		keyboard.add(contact_button, ahmed)
 		bot.send_message(chat_id=message.chat.id, text=f'''<b>𝗬𝗢𝗨 𝗖𝗔𝗡𝗡𝗢𝗧 𝗨𝗦𝗘 𝗧𝗛𝗘 𝘾𝙃𝘼𝙉𝙉𝙀𝙇 𝗕𝗘𝗖𝗔𝗨𝗦𝗘 𝗬𝗢𝗨𝗥 𝗦𝗨𝗕𝗦𝗖𝗥𝗜𝗣𝗧𝗜𝗢𝗡 𝗛𝗔𝗦 𝗘𝗫𝗣𝗜𝗥𝗘𝗗</b>
 	''',reply_markup=keyboard)
@@ -1172,7 +1172,7 @@ def respond_to_vbv(message):
 	if BL == '𝗙𝗥𝗘𝗘':
 		keyboard = types.InlineKeyboardMarkup()
 		contact_button = types.InlineKeyboardButton(text="𝗢𝗪𝗡𝗘𝗥 ", url="https://t.me/YourExDestiny")
-		ahmed = types.InlineKeyboardButton(text="𝘾𝙃𝘼𝙉𝙉𝙀𝙇 ", url="https://t.me/PHP_BL")
+		ahmed = types.InlineKeyboardButton(text="𝘾𝙃𝘼𝙉𝙉𝙀𝙇 ", url="https://t.me/CARD3DBOTx")
 		keyboard.add(contact_button, ahmed)
 		bot.send_message(chat_id=message.chat.id, text=AUTH_NOT, reply_markup=keyboard)
 		return
@@ -1184,7 +1184,7 @@ def respond_to_vbv(message):
 	except Exception as e:
 		keyboard = types.InlineKeyboardMarkup()
 		contact_button = types.InlineKeyboardButton(text="𝗢𝗪𝗡𝗘𝗥 ", url="https://t.me/YourExDestiny")
-		ahmed = types.InlineKeyboardButton(text="𝘾𝙃𝘼𝙉𝙉𝙀𝙇 ", url="https://t.me/PHP_BL")
+		ahmed = types.InlineKeyboardButton(text="𝘾𝙃𝘼𝙉𝙉𝙀𝙇 ", url="https://t.me/CARD3DBOTx")
 		keyboard.add(contact_button, ahmed)
 		bot.send_message(chat_id=message.chat.id, text=AUTH_NOT, reply_markup=keyboard)
 		return
@@ -1193,7 +1193,7 @@ def respond_to_vbv(message):
 	if current_time - provided_time > required_duration:
 		keyboard = types.InlineKeyboardMarkup()
 		contact_button = types.InlineKeyboardButton(text="𝗢𝗪𝗡𝗘𝗥 ", url="https://t.me/YourExDestiny")
-		ahmed = types.InlineKeyboardButton(text="𝘾𝙃𝘼𝙉𝙉𝙀𝙇 ", url="https://t.me/PHP_BL")
+		ahmed = types.InlineKeyboardButton(text="𝘾𝙃𝘼𝙉𝙉𝙀𝙇 ", url="https://t.me/CARD3DBOTx")
 		keyboard.add(contact_button, ahmed)
 		bot.send_message(chat_id=message.chat.id, text=f'''<b>𝗬𝗢𝗨 𝗖𝗔𝗡𝗡𝗢𝗧 𝗨𝗦𝗘 𝗧𝗛𝗘 𝘾𝙃𝘼𝙉𝙉𝙀𝙇 𝗕𝗘𝗖𝗔𝗨𝗦𝗘 𝗬𝗢𝗨𝗥 𝗦𝗨𝗕𝗦𝗖𝗥𝗜𝗣𝗧𝗜𝗢𝗡 𝗛𝗔𝗦 𝗘𝗫𝗣𝗜𝗥𝗘𝗗</b>
 	''',reply_markup=keyboard)
