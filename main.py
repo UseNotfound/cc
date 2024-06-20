@@ -26,7 +26,7 @@ coun = f.country()
 mail = f.email()
 command_usage = {}
 
-AUTH_NOT = f"""{names} Not Auth In Bot,
+AUTH_NOT = f"""Your Not Auth In Bot,
 
 
 𝑪𝑳𝑰𝑪𝑲 /cmds 𝑻𝑶 𝑽𝑰𝑬𝑾 𝑻𝑯𝑬 𝑪𝑶𝑴𝑴𝑨𝑵𝑫𝑺
