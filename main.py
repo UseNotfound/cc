@@ -31,6 +31,27 @@ AUTH_NOT = f"""{name} Not Auth In Bot,
 
 𝑪𝑳𝑰𝑪𝑲 /cmds 𝑻𝑶 𝑽𝑰𝑬𝑾 𝑻𝑯𝑬 𝑪𝑶𝑴𝑴𝑨𝑵𝑫𝑺
 """
+
+CMDS = f'''<b> 
+𝗧𝗛𝗘𝗦𝗘 𝗔𝗥𝗘 𝗧𝗛𝗘 𝘾𝙃𝘼𝙉𝙉𝙀𝙇'𝗦 𝗖𝗢𝗠𝗠𝗔𝗡𝗗𝗦 
+━━━━━━━━━━━━
+𝗕𝗥𝗔𝗜𝗡𝗧𝗥𝗘𝗘 𝗔𝗨𝗧𝗛 > <code>/chk number|mm|yy|cvc</code>
+𝗦𝗧𝗔𝗧𝗨𝗦 𝗢𝗡𝗟𝗜𝗡𝗘 ✅
+━━━━━━━━━━━━
+3𝗗 𝗟𝗢𝗢𝗞𝗨𝗣 > <code>/vbv number|mm|yy|cvc</code>
+𝗢𝗡𝗟𝗜𝗡𝗘 ✅
+━━━━━━━━━━━━
+𝗦𝗧𝗥𝗜𝗣𝗘 𝗖𝗛𝗔𝗥𝗚𝗘 > <code>/str number|mm|yy|cvc</code>
+𝗢𝗙𝗙𝗟𝗜𝗡𝗘 ❌
+━━━━━━━━━━━━
+𝗦𝗧𝗥𝗜𝗣𝗘 𝗔𝗨𝗧𝗛 > <code>/au number|mm|yy|cvc</code>
+𝗢𝗙𝗙𝗟𝗜𝗡𝗘 ❌
+━━━━━━━━━━━━
+
+𝗪𝗘 𝗪𝗜𝗟𝗟 𝗕𝗘 𝗔𝗗𝗗𝗜𝗡𝗚 𝗦𝗢𝗠𝗘 𝗚𝗔𝗧𝗘𝗪𝗔𝗬𝗦 𝗔𝗡𝗗 𝗧𝗢𝗢𝗟𝗦 𝗦𝗢𝗢𝗡</b>
+'''
+
+
 def reset_command_usage():
 	for user_id in command_usage:
 		command_usage[user_id] = {'count': 0, 'last_time': None}
@@ -89,7 +110,7 @@ def start(message):
 	keyboard = types.InlineKeyboardMarkup()
 	contact_button = types.InlineKeyboardButton(text=f"{BL} ",callback_data='plan')
 	keyboard.add(contact_button)
-	bot.send_message(chat_id=message.chat.id, text=AUTH_NOT, reply_markup=keyboard)
+	bot.send_message(chat_id=message.chat.id, text=CMDS, reply_markup=keyboard)
 @bot.message_handler(content_types=["document"])
 def main(message):
 		name = message.from_user.first_name
